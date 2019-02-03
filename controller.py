@@ -40,7 +40,7 @@ class Controller:
             res = self.model.filter_by_hours(t1, t2)  # ("04:00:02", "09:03:02")
         elif command == '2':
             t1, t2 = self.view.get_hours()
-            date = self.view.get_hours()
+            date = self.view.get_date()
             res = self.model.filter_by_date_and_hour(date, t1, t2)
         elif command == '3':
             x0, y0, x1, y1=self.view.get_area()

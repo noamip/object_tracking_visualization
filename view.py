@@ -24,6 +24,14 @@ class View:
             plot(x, y)
         show()
 
+
+    def draw_path_one_by_one(self, to_draw):
+        imshow(self.img)
+        for x, y in to_draw:
+            imshow(self.img)
+            plot(x, y)
+            show()
+
     def get_filter(self):
         command = input("""enter filter selection:
               1. filter by hours range
@@ -67,3 +75,25 @@ class View:
     def get_areas(self):
         areas = input("enter areas as in pic:\n").split(',')
         return areas
+
+    def draw_grid(self):
+        size = 10
+        i = 0
+        ab = range(size * size)
+        im = cv2.imread(self.path_img, 1)
+        h, w = im.shape[:2]
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        dx, dy = w // size, h // size
+        for y in range(size):
+            for x in range(size):
+                x_place, y_place = int((x * dx + dx / 2) - size), int(y * dy + dy - size)
+                cv2.putText(im, str(ab[i]), (x_place, y_place), font, 0.6, (0, 0, 0), 2, cv2.LINE_AA)
+                i += 1
+        for i in range(dy, h, dy):
+            im[i:i + 2, :] = 0
+        for i in range(dx, w, dx):
+            im[:, i:i + 2] = 0
+        cv2.imwrite("grid_img.png", im)
+        img = imread("grid_img.png")
+        imshow(img)
+        show()
