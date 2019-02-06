@@ -6,8 +6,8 @@ class Model:
         self.NUM_SLICE_Y=10
         self.NUM_SLICE_X=10
 
-    def set_file(self, file, pic):
-        self.img = imread(pic)
+    def set_file(self, file):#, pic):
+        # self.img = imread(pic)
         self.df = ff.load_file(file)  # 'data/paths.pkl.xz' pd.read_pickle('data/paths.pkl.xz')  #
         self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
         self.df = self.index_file
