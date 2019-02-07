@@ -38,7 +38,7 @@ class Gui_View:
         self.master_panel.grid(padx=10, pady=10, sticky=tk.W + tk.E + tk.N + tk.S)
 
         self.file_button = tk.Button(self.master_panel, text="Load File", command=self.funcs['load_file'],
-                                     width=10, height=1, bg='white', font=("Arial", 11))
+                                     width=10, height=1, bg='lightGray', font=("Arial", 11))
         self.file_button.config(font=("Arial", 11))
         self.file_button.grid()
         self.file_entry = tk.Entry(self.master_panel, width=20)
@@ -46,7 +46,7 @@ class Gui_View:
         self.file_entry.grid(row=0, column=1, padx=(5, 0))
 
         self.image_button = tk.Button(self.master_panel, text="Load Image", command=self.funcs['load_image'],
-                                      width=10, height=1, bg='white', font=("Arial", 11))
+                                      width=10, height=1, bg='lightGray', font=("Arial", 11))
         self.image_button.grid(row=0, column=2, padx=(10, 0))
         # self.image_button.config(font=("Arial", 11))
         self.img_entry = tk.Entry(self.master_panel, width=20)
@@ -109,18 +109,30 @@ class Gui_View:
         self.block_filter = tk.Entry(self.master_panel, width=25, bg='white')
         self.block_filter.grid(row=12, column=5)
 
+        # load routes button=============
         self.filters_button = tk.Button(self.master_panel, text="Load Routes", command=self.funcs['load_routes'],
-                                        height=1, width=30, bg='white', font=("Arial", 11))
-        self.filters_button.grid(row=13, column=4, columnspan=2)
-
+                                        height=1, width=17, bg='lightGray', font=("Arial", 11))
+        self.filters_button.grid(row=13, column=4, columnspan=1,pady=(6, 0))
+        #show grid button=============
         self.grid_button = tk.Button(self.master_panel, text="Show Grid", command=self.funcs['show_grid'],
-                                        height=1, width=30, bg='white', font=("Arial", 11))
-        self.grid_button.grid(row=14, column=4, columnspan=2)
+                                        height=1, width=17, bg='lightGray', font=("Arial", 11))
+        self.grid_button.grid(row=13, column=5, columnspan=1,pady=(6, 0))
+
+        # show grid button=============
+        self.refresh = tk.Button(self.master_panel, text="Refresh Data", command=self.funcs['refresh'],
+                                     height=1, width=17, bg='lightGray', font=("Arial", 11))
+        self.refresh.grid(row=14, column=4, columnspan=1,pady=(6, 0))
+
+        # save button=============
+        self.save = tk.Button(self.master_panel, text="Save Current", command=self.funcs['save'],
+                                 height=1, width=17, bg='lightGray', font=("Arial", 11))
+        self.save.grid(row=14, column=5, columnspan=1,pady=(6, 0))
+
 
     def draw_bottom_panel(self):
-        self.status_message = tk.Message(self.master_panel, text="Program Output", bg='white', borderwidth=5,anchor=tk.NW,
+        self.status_message = tk.Message(self.master_panel, text="Program Output", bg='lightGray', borderwidth=5,anchor=tk.NW,
                                          width=800,highlightbackground="black", highlightthickness=1, font=("Arial", 14))
-        self.status_message.grid( row=21, column=0, columnspan=4)
+        self.status_message.grid(row=14, column=0, columnspan=4)
 
     def draw_image(self,image_name):
         image = plt.imread(image_name)
@@ -132,8 +144,8 @@ class Gui_View:
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.master_panel)
         self.canvas.draw()
 
-        self.canvas.get_tk_widget().grid(row=1, column=0, columnspan=4, rowspan=20, sticky=tk.W + tk.E + tk.N + tk.S,
-                                    padx=(10, 10), pady=(10, 10))
+        self.canvas.get_tk_widget().grid(row=1, column=0, columnspan=4, rowspan=13, sticky=tk.W + tk.E + tk.N + tk.S,
+                                    padx=(10, 10))
 
     def plot_image_and_routes(self,data_obj):
 

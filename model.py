@@ -1,6 +1,9 @@
 import pandas as pd
 from pylab import imread
 import fix_file as ff
+from settings import DEFUALT_IMAGE_FILE
+
+
 class Model:
     def __init__(self):
         self.NUM_SLICE_Y=10
@@ -9,8 +12,11 @@ class Model:
     def set_file(self, file):#, pic):
         # self.img = imread(pic)
         self.df = ff.load_file(file)  # 'data/paths.pkl.xz' pd.read_pickle('data/paths.pkl.xz')  #
-        self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
-        self.df = self.index_file
+        try:
+            self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
+        except KeyError:
+            self.index_file=self.df
+        # self.df = self.index_file
         self.last = self.index_file  # self.df
 
 
@@ -51,8 +57,9 @@ class Model:
         return self.to_arrays(data_a)
 
     def filter_by_areas(self, areas):
-        width = self.img.shape[1]
-        height = self.img.shape[0]
+        img = imread(DEFUALT_IMAGE_FILE)
+        width = img.shape[1]
+        height = img.shape[0]
         intersect_series = pd.Series([])
         for squere_index in areas:
             row_index = int(squere_index) // self.NUM_SLICE_Y
@@ -82,3 +89,6 @@ class Model:
         indexes = set(data_to_set.index.unique())
         last_data = self.index_file[self.index_file.index.isin(indexes)]
         self.last = last_data
+
+    def get_last_data(self):
+        return self.last

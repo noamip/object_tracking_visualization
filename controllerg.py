@@ -1,3 +1,8 @@
+import csv
+import datetime
+import pickle
+import time
+
 from gui_view import Gui_View
 from model import Model
 import re
@@ -16,7 +21,9 @@ class Controller:
             'load_file':self.load_data_file,
             'load_image':self.load_image_file,
             'load_routes':self.load_image_routes,
-            'show_grid':self.show_grid
+            'show_grid':self.show_grid,
+            'refresh':self.refresh_data,
+            'save':self.save
         })
         self.v = Gui_View(funcs)
         self.filters = defaultdict()
@@ -24,6 +31,14 @@ class Controller:
 
     def show_grid(self):
         self.v.show_grid()
+
+    def refresh_data(self):
+        self.m.reset()
+
+    def save(self):
+        tm = time.strftime("%Y%m%d-%H%M%S")
+        self.m.get_last_data().to_pickle(f"data/{tm}.pkl.xz")
+
 
     def load_data_file(self):
         print("in load file")
@@ -41,7 +56,6 @@ class Controller:
         self.v.status_update("Finished Loading Data")
 
     def load_image_file(self):
-
         self.image = self.v.get_image()
         logger.debug(f"NOOOOO got image from view {self.image}")
         if not self.image:
@@ -66,14 +80,23 @@ class Controller:
             print("in area")
             area = self.v.area_filter.get()
             x1,y1,x2,y2 = area.split(',')
-            df=self.m.filter_by_area( int(x1),int(y1),int(x2),int(y2))
+            df=self.m.filter_by_area(int(x1),int(y1),int(x2),int(y2))
             print("after area")
         if self.v.active_filters['hour'].get():
             print("in hour")
             t1=self.v.first_hour_filter.get()
             t2=self.v.second_hour_filter.get()
-            print(str(t1),str(t2),t1,t2)
+            # print(str(t1),str(t2),t1,t2)
             df=self.m.filter_by_hours(str(t1),str(t2))
+        if self.v.active_filters['date'].get():
+            print("in date")
+            t1 = self.v.first_dhour_filter.get()
+            t2 = self.v.second_dhour_filter.get()
+            date=self.v.date_filter.get()
+            df = self.m.filter_by_date_and_hour(date,t1,t2)
+        if self.v.active_filters["block"].get():
+            areas=self.v.block_filter.get().split(',')
+            df=self.m.filter_by_areas(areas)
         self.v.plot_image_and_routes(df)
 
 
