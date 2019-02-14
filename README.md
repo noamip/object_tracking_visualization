@@ -7,6 +7,6 @@ This project is developed asa python application using tkinter for GUI.
 
 The project is mentored by Dr. Assaf Spanier.
 
-## LInks:
+## Links:
 [project diary](https://github.com/noamip/object_tracking_visualization/wiki/Diary)<br/>
 [project management](https://github.com/noamip/object_tracking_visualization/projects/1)
