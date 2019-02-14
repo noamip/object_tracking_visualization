@@ -5,12 +5,8 @@ from matplotlib import pyplot
 np = numpy
 plt = pyplot
 
-import pandas as pd
-from IPython.display import display
-from IPython.core.pylabtools import figsize, getfigs
 from pylab import *
 from numpy import *
-import controller
 
 
 class View:

@@ -1,10 +1,10 @@
-from model import Model
-from view import View
+from filtermodel import FilterModel
+from bla.view import View
 
 
 class Controller:
     def __init__(self):
-        self.model = Model()
+        self.model = FilterModel()
         self.view = View()
         self.run()
 

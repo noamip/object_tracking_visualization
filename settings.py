@@ -21,4 +21,4 @@ GENERAL_SETTINGS = dict({'hard_reload_data_files': False,
                             'auto_load_path_by_path': True,
                             'num_of_blocks_in_image': 10,
                             'path_by_path_limit': 30,
-                            'start_draw_heatmap_limit': 3000})
+                            'start_draw_heatmap_limit': 200})

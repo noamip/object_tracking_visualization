@@ -1,4 +1,6 @@
-from controller import Controller
+from controllerg import Controller as c_gui
 
-c=Controller()
-# c.run()
+c = c_gui()
+
+c.run()
+
