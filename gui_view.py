@@ -15,7 +15,7 @@ class Gui_View:
         self.master = master
         self.set_window_init()
 
-        self.len_param = {'area': 4, 'hour': 2, 'date': 3}
+        # self.len_param = {'area': 4, 'hour': 2, 'date': 3}
 
         self.config = GENERAL_SETTINGS
         if os.path.exists("last.png"):

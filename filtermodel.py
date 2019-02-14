@@ -20,7 +20,7 @@ class FilterModel:
         self.last = self.index_file  # self.df
 
 
-    def reset(self):
+    def reset_data(self):
         self.last = self.df
 
 
@@ -52,7 +52,7 @@ class FilterModel:
         arr = self.to_arrays(items)
         return arr
 
-    def filter_area(self, x0, x1, y0, y1):
+    def filter_area(self, x0, x1, y0, y1):#returns data in specified area
         data_a = self.last[(self.last.x.between(x0, x1)) & (self.last.y.between(y0, y1))]
         return data_a
 
@@ -80,8 +80,8 @@ class FilterModel:
         return self.to_arrays(intersect_series.groupby(["filename", "obj"]).size())
 
 
-    def no_filter(self):
-        return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
+    # def no_filter(self):
+    #     return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
 
     def to_arrays(self, to_draw):#returns an array of (xarray,yarray) tuples- points to draw for each object
         points = []
