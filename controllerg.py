@@ -70,11 +70,11 @@ class Controller:
         logger.debug(f"got filters {self.filters}")
         df = None
         if self.view.active_filters['area'].get():  # if filter by area is selected
-            # print("in area")
+            print("in area")
             area = self.view.area_filter.get()
             x1, y1, x2, y2 = area.split(',')
-            df = self.filter_model.filter_by_area(int(x1), int(y1), int(x2), int(y2))
-            # print("after area")
+            df = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
+            print("after area")
         if self.view.active_filters['hour'].get():  # if filter by time is selected
             # print("in hour")
             t1 = self.view.first_hour_filter.get()
