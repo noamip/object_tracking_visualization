@@ -9,4 +9,5 @@ The project is mentored by Dr. Assaf Spanier.
 
 ## Links:
 [project diary](https://github.com/noamip/object_tracking_visualization/wiki/Diary)<br/>
-[project management](https://github.com/noamip/object_tracking_visualization/projects/1)
+[project management](https://github.com/noamip/object_tracking_visualization/projects/1)<br/>
+[project alpha version video](https://drive.google.com/open?id=1mYVKFlDdLboexKma4YtJ6Cc7jlFyF9cR)
