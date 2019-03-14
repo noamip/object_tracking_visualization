@@ -76,13 +76,13 @@ class Controller:
             df = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
             print("after area")
         if self.view.active_filters['hour'].get():  # if filter by time is selected
-            # print("in hour")
+            print("in hour")
             t1 = self.view.first_hour_filter.get()
             t2 = self.view.second_hour_filter.get()
-            # print(str(t1),str(t2),t1,t2)
             df = self.filter_model.filter_by_hours(str(t1), str(t2))
+            print("after hour",len(df))
         if self.view.active_filters['date'].get():  # if filter by date+time is selected
-            # print("in date")
+            print("in date")
             t1 = self.view.first_dhour_filter.get()
             t2 = self.view.second_dhour_filter.get()
             date = self.view.date_filter.get()
@@ -90,46 +90,10 @@ class Controller:
         if self.view.active_filters["block"].get():  # if filter by areas is selected
             areas = self.view.block_filter.get().split(',')
             df = self.filter_model.filter_by_areas(areas)
+        if len(df) ==0:
+            self.view.draw_image(self.image)
         self.view.plot_image_and_routes(df)
 
-    #
-    # def initial_run(self):
-    #     self.v.set_image(self.image)
-    #     self.m.set_file(self.file)
-    #
-    #
     def run(self):
         self.view.master.mainloop()
 
-    #
-    # def run2(self):
-    #     self.initial_run()
-    #     self.v.output("Displaying the first 100 rounds.\navailable: filter,grid,config,exit")
-    #     cmd = "init"
-    #     while cmd != 'exit':
-    #         if self.string_found("filter",cmd):
-    #             self.filters = self.v.get_filters(self.filters)
-    #             self.v.plot_image_and_routes(self.m.get_data(self.filters))
-    #         if self.string_found("grid", cmd):
-    #             self.v.draw_grid()
-    #         if self.string_found("config", cmd):
-    #             n_conf = self.v.set_config(self.config)
-    #             self.set_filters(n_conf)
-    #         self.v.output("Enter Command:")
-    #         cmd = self.v.get_input()
-    #
-    #
-    #
-    #
-    # def string_found(self, string1, string2):#helper function -returns true if string2 appears in string1
-    #     if re.search(r"\b" + re.escape(string1) + r"\b", string2):
-    #         return True
-    #     return False
-    #
-    # def set_filters(self, n_conf):
-    #     self.config = n_conf
-    #     self.filter_model.config = self.config
-    #     self.view.config = self.config
-    #     self.view.NUM_SLICE = self.config['num_of_blocks_in_image']
-    #     self.filter_model.NUM_SLICE_X = self.config['num_of_blocks_in_image']
-    #     self.filter_model.NUM_SLICE_Y = self.config['num_of_blocks_in_image']

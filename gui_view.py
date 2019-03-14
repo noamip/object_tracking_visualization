@@ -6,6 +6,8 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from settings import logger
 from settings import GENERAL_SETTINGS
 
+# from tkinter import *
+
 
 
 class Gui_View:
@@ -21,6 +23,7 @@ class Gui_View:
         if os.path.exists("last.png"):
             os.remove("last.png")
 
+    event2canvas = lambda e, c: (c.canvasx(e.x), c.canvasy(e.y))
 
     def set_window_init(self):
         self.master.title("Parse Routes")
@@ -132,6 +135,8 @@ class Gui_View:
                                          font=("Arial", 14))
         self.status_message.grid(row=14, column=0, columnspan=4)
 
+
+
     def draw_image(self, image_name):#display image on screen
         image = plt.imread(image_name)
         self.fig = plt.figure()  # figsize=(5, 4)
@@ -143,7 +148,19 @@ class Gui_View:
         self.canvas.draw()
 
         self.canvas.get_tk_widget().grid(row=1, column=0, columnspan=4, rowspan=13, sticky=tk.W + tk.E + tk.N + tk.S,
-                                         padx=(10, 10))
+        padx=(10, 10))
+
+        cid=self.fig.canvas.mpl_connect('button_press_event', self.onclick)
+
+
+    def onclick(self,event):
+            print('%s click: button=%d, x=%d, y=%d, xdata=%f, ydata=%f' %
+                  ('double' if event.dblclick else 'single', event.button,
+                   event.x, event.y, event.xdata, event.ydata))
+
+
+
+
 
     def plot_image_and_routes(self, data_obj):
         l = len(data_obj)
@@ -244,3 +261,6 @@ class Gui_View:
     def set_image(self, image_name):  # sets image
         self.image_name = image_name
         self.img = plt.imread(image_name)
+
+
+

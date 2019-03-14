@@ -16,12 +16,11 @@ class FilterModel:
             self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
         except KeyError:
             self.index_file=self.df
-        # self.df = self.index_file
-        self.last = self.index_file  # self.df
-
+        self.last = self.index_file
 
     def reset_data(self):
-        self.last = self.df
+        self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
+        self.last = self.index_file
 
 
     def filter_by_hours(self, begin, end):# filter by specific hour range
