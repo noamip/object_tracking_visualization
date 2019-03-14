@@ -92,6 +92,7 @@ class Controller:
             df = self.filter_model.filter_by_areas(areas)
         if len(df) ==0:
             self.view.draw_image(self.image)
+            self.view.status_update("no data applies")
         self.view.plot_image_and_routes(df)
 
     def run(self):
