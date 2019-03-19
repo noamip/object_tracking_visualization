@@ -1,4 +1,6 @@
 import tkinter as tk
+from tkinter import messagebox
+
 import matplotlib.pyplot as plt
 from coverage.files import os
 import matplotlib.ticker as plticker
@@ -6,8 +8,8 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from settings import logger
 from settings import GENERAL_SETTINGS
 
-# from tkinter import *
 
+# from tkinter import *
 
 
 class Gui_View:
@@ -30,9 +32,9 @@ class Gui_View:
         self.draw_top_panel()
         # self.place_holder()
         self.draw_filters()
-        self.draw_bottom_panel()
+        # self.draw_bottom_panel()
 
-    def draw_top_panel(self):#draw image and file entries
+    def draw_top_panel(self):  # draw image and file entries
         self.master_panel = tk.Frame(self.master, borderwidth=2, bg='white')
         self.master_panel.grid(padx=10, pady=10, sticky=tk.W + tk.E + tk.N + tk.S)
 
@@ -52,7 +54,7 @@ class Gui_View:
         self.img_entry.config(font=("Arial", 11))
         self.img_entry.grid(row=0, column=3, padx=(5, 0))
 
-    def draw_filters(self):#draw filters panel
+    def draw_filters(self):  # draw filters panel
         self.active_filters = {"area": tk.IntVar(), "hour": tk.IntVar(), "date": tk.IntVar(), "block": tk.IntVar()}
         self.label_filters = tk.Label(self.master_panel, text="Filters:", bg='white', font=("Arial", 14)).grid(
             row=1, column=4, columnspan=2, sticky=tk.W)
@@ -118,26 +120,29 @@ class Gui_View:
                                      height=1, width=17, bg='lightGray', font=("Arial", 11))
         self.grid_button.grid(row=13, column=5, columnspan=1, pady=(6, 0))
 
-        # show grid button=============
+        # refresh button=============
         self.refresh = tk.Button(self.master_panel, text="Refresh Data", command=self.funcs['refresh'],
                                  height=1, width=17, bg='lightGray', font=("Arial", 11))
         self.refresh.grid(row=14, column=4, columnspan=1, pady=(6, 0))
 
+        # merge button=============
+        self.merge = tk.Button(self.master_panel, text="Merge Routes", command=self.funcs['merge'],
+                                 height=1, width=17, bg='lightGray', font=("Arial", 11))
+        self.merge.grid(row=14, column=5, columnspan=1, pady=(6, 0))
+
         # save button=============
         self.save = tk.Button(self.master_panel, text="Save Current", command=self.funcs['save'],
                               height=1, width=17, bg='lightGray', font=("Arial", 11))
-        self.save.grid(row=14, column=5, columnspan=1, pady=(6, 0))
+        self.save.grid(row=15, column=4, columnspan=1, pady=(6, 0))
 
-    def draw_bottom_panel(self):#draw output-status panel
-        self.status_message = tk.Message(self.master_panel, text="Program Output", bg='lightGray', borderwidth=5,
-                                         anchor=tk.NW,
-                                         width=800, highlightbackground="black", highlightthickness=1,
-                                         font=("Arial", 14))
-        self.status_message.grid(row=14, column=0, columnspan=4)
+    # def draw_bottom_panel(self):#draw output-status panel
+    #     self.status_message = tk.Message(self.master_panel, text="Program Output", bg='lightGray', borderwidth=5,
+    #                                      anchor=tk.NW,
+    #                                      width=800, highlightbackground="black", highlightthickness=1,
+    #                                      font=("Arial", 14))
+    #     self.status_message.grid(row=14, column=0, columnspan=4)
 
-
-
-    def draw_image(self, image_name):#display image on screen
+    def draw_image(self, image_name):  # display image on screen
         image = plt.imread(image_name)
         self.fig = plt.figure()  # figsize=(5, 4)
         im = plt.imshow(image)  # later use a.set_data(new_data)
@@ -148,19 +153,14 @@ class Gui_View:
         self.canvas.draw()
 
         self.canvas.get_tk_widget().grid(row=1, column=0, columnspan=4, rowspan=13, sticky=tk.W + tk.E + tk.N + tk.S,
-        padx=(10, 10))
+                                         padx=(10, 10))
 
-        cid=self.fig.canvas.mpl_connect('button_press_event', self.onclick)
+        # cid=self.fig.canvas.mpl_connect('button_press_event', self.onclick)
 
-
-    def onclick(self,event):
-            print('%s click: button=%d, x=%d, y=%d, xdata=%f, ydata=%f' %
-                  ('double' if event.dblclick else 'single', event.button,
-                   event.x, event.y, event.xdata, event.ydata))
-
-
-
-
+    # def onclick(self,event):
+    #         print('%s click: button=%d, x=%d, y=%d, xdata=%f, ydata=%f' %
+    #               ('double' if event.dblclick else 'single', event.button,
+    #                event.x, event.y, event.xdata, event.ydata))
 
     def plot_image_and_routes(self, data_obj):
         l = len(data_obj)
@@ -170,27 +170,29 @@ class Gui_View:
         logger.debug(f"l={l},lim={lim}")
         if l > lim:
             self.plot_all_routes(data_obj)
-        else:
-            self.plot_one_by_one(data_obj)
+        elif l>0:
+            MsgBox = tk.messagebox.askquestion('One by One?', 'Would you like to plot routes one by one?')
+            if MsgBox == 'yes':
+                self.plot_one_by_one(data_obj)
+            else:
+                self.plot_all_routes(data_obj)
 
     def plot_all_routes(self, to_draw):  # plot all routes together
         logger.debug(f"entering plot_all_routes with {len(to_draw)} routes")
         im = plt.imread(self.image_name)
-        print(f"in plot all routes len {len(to_draw)}")
+        # print(f"in plot all routes len {len(to_draw)}")
         plt.imshow(im)
         for x, y in to_draw:
             plt.plot(x, y)
         plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
-        print("after plot all routes")
+        # print("after plot all routes")
 
     def plot_one_by_one(self, to_draw):  # plot each route individually
         logger.debug(f"entering plot_one_by_one with {len(to_draw)} routes")
-        # im = plt.imread(self.image_name)
-        # self.draw_grid()
+        im = plt.imread(self.image_name)
         for x, y in to_draw:
-            im = plt.imread(self.image_name)
             plt.imshow(im)
             plt.plot(x, y)
             self.canvas.draw()
@@ -256,11 +258,57 @@ class Gui_View:
         self.status_message.configure(text=f"Curropted input. Task aborted:{msg}")
 
     def status_update(self, msg):
-        self.status_message.configure(text=f"{msg}")
+        messagebox.showinfo("Parse Routes", f"{msg}")
+        # self.status_message.configure(text=f"{msg}")
 
     def set_image(self, image_name):  # sets image
         self.image_name = image_name
         self.img = plt.imread(image_name)
 
+    def plot_merge(self, data):
+        im = plt.imread(self.image_name)
+        # print(f"in plot all routes len {len(to_draw)}")
+        plt.imshow(im)
+        i=0
+        for x, y in data:
+            plt.plot(x, y,label=f"{i}")
+            i+=1
+        plt.legend()
+        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
+        self.canvas.draw()
+        plt.gcf().clear()
+        result = self.ask_multiple_choice_question(
+            "What is your favorite color?",
+            [
+                "Blue!",
+                "No -- Yellow!",
+                "Aaaaargh!"
+            ]
+        )
 
+        print("User's response was: {}".format(repr(result)))
+        # self.listbox = tk.Listbox(self.master_panel)
+        # self.listbox.insert(tk.END, "a list entry")
+        #
+        # for item in range(len(data)):
+        #     self.listbox.insert(tk.END, item)
+        #
+        # self.listbox.grid(row=10, column=1,columnspan=2)
+        # # tk.mainloop()
 
+        # plt.plot(x_A, y_A, 'g--', label="plot A")
+        # plt.plot(x_B, y_B, 'r-o', label="plot A")
+        # plt.legend()
+        # plt.show()
+
+    def ask_multiple_choice_question(self,prompt, options):
+        root = self.master
+        if prompt:
+            tk.Label(root, text=prompt)
+        v = tk.IntVar()
+        for i, option in enumerate(options):
+            tk.Radiobutton(root, text=option, variable=v, value=i)
+        tk.Button(text="Submit", command=root.destroy)
+        root.mainloop()
+        if v.get() == 0: return None
+        return options[v.get()]

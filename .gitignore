@@ -1,8 +1,18 @@
 __pycache__/
 *.py[cod]
 /data/
+
+/scripts/data/
+
 .idea
 .ipynb_checkpoints
-/bla/
+
 # To keep Udi and all the participants sane during the Hackathon
 Pipfile.lock  # This file should actually BE in the repository
+
+oddetect.csv
+log.log
+error_log.txt
+
+/pickles_can/
+/bla/

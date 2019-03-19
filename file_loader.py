@@ -1,70 +1,112 @@
 import pandas as pd
 import csv
 
+from settings import logger
+import os.path
 
-def load_file(file):
-    if file[-4:] == ".csv":  # a csv file
-        fixed_file = fix_csv(file)  # remove illegal rows
-        col_names = ["frame", "x", "y", "obj", "size", "seq", "tbd1", "tbd2", "tbd3", "filename", "time", "path_time",
-                     "delta_time", "tbd4"]
-        use_cols = ["frame", "x", "y", "obj", "size", "seq", "filename", "time",
-                    "delta_time"]  # use only relevant columns
-        df = pd.read_csv(fixed_file, names=col_names, usecols=use_cols, parse_dates=['time'])  # read file to dataframe
-        df['time'] = df['time'] + pd.to_timedelta(df['delta_time'])  # add time column
-        df = df.drop(['delta_time'], axis=1)  # remove delta time column
+class FileFixer:
+    def fix_corrupted_file(self, file_name, fixed_path, corrupted_path):
+        logger.debug(
+            f"entering fix_corrupted_file,file_name={file_name},fixed_path={fixed_path},corrupted_path={corrupted_path}")
+        # logger.error(file_name)
 
-        df = optimize_csv(df)  # optimize data
+        valid_counter = 0
+        invalid_counter = 0
+        # for line in fileinput.input(file_name):
+        with open(file_name, 'r') as datar, open(fixed_path, "w") as fixedw, open(
+                corrupted_path,
+                "w",
+                encoding="utf-8") as errorw:
 
-        file_name = file[:-4]
-        file_path = f'{file_name}.pkl.xz'
-        file = df.to_pickle(file_path)  # pickle the csv file
-    else:  # a pkl file entered
-        file_path = file
+            for line in datar.readlines():
+                if (len(line.split(', ')) == 14):
+                    fixedw.write(line.strip(" "))
+                    valid_counter += 1
+                else:
+                    errorw.write(line.strip(" "))
+                    invalid_counter += 1
 
-    return load_pickle(file_path)  # load the pickle file
-
-
-def fix_csv(csv_file):  # removes wrong format rows from the data file
-    lines = []
-    file_name = csv_file[:-4]
-    with open(csv_file, 'r') as readFile:
-        reader = csv.reader(readFile)
-        for row in reader:
-            if len(row) == 14:
-                for i in range(len(row)):
-                    row[i] = row[i].strip()
-                lines.append(row)
-            else:
-                continue
-
-    fixed_file_path = f'{file_name}_fixed.csv'
-    with open(fixed_file_path, 'w') as writeFile:
-        writer = csv.writer(writeFile)
-        writer.writerows(lines)
-
-    readFile.close()
-    writeFile.close()
-
-    return fixed_file_path
+        logger.error(f"{valid_counter} valid lines.")
+        # print(f"{valid_counter} valid lines.")
+        logger.error(f"{invalid_counter} corrupted lines. See {corrupted_path}")
 
 
-def optimize_csv(df):  # optimizes the data file to take less space
-    df_int = df.select_dtypes(include=['int64'])
-    converted_int = df_int.apply(pd.to_numeric, downcast='unsigned')
-    df[converted_int.columns] = converted_int
-    df_obj = df.select_dtypes(include=['object']).copy()
-    converted_obj = pd.DataFrame()
+    def optimize_csv_file(self, file_name):
+        logger.debug(f"entering optimize_csv_file,file_name={file_name}")
 
-    for col in df_obj.columns:
-        num_unique_values = len(df_obj[col].unique())
-        num_total_values = len(df_obj[col])
-        if num_unique_values / num_total_values < 0.5:
-            converted_obj.loc[:, col] = df_obj[col].astype('category')
-        else:
-            converted_obj.loc[:, col] = df_obj[col]
-    df[converted_obj.columns] = converted_obj
-    return df
+        cols_types = dict({
+            'delta_time': 'object',
+            'filename': 'category',
+            'frame': 'uint16',
+            'obj': 'uint16',
+            'path_time': 'object',
+            'seq': 'uint16',
+            'size': 'uint32',
+            'x': 'uint16',
+            'y': 'uint16'})
+
+        cols = ["frame", "x", "y", "obj", "size", "seq", "tbd1", "tbd2", "tbd3", "filename", "start", "path_time",
+                "delta_time", "tbd4"]
+        useful_cols = ["frame", "x", "y", "obj", "size", "seq", "filename", "start", "path_time", "delta_time"]
+
+        df = pd.read_csv(file_name, names=cols, usecols=useful_cols, dtype=cols_types, parse_dates=['start'],
+                         infer_datetime_format=True)
+
+        logger.debug(f"optimize_csv_file: finished reading csv file")
+
+        df = self.set_time_row(df)
+        df = self.set_general_index(df)
+        # df = self.remove_duplicates()
+
+        return df
 
 
-def load_pickle(pickle):  # loads the pkl file
-    return pd.read_pickle(pickle)
+    def load_data(self, file_name):
+        # print("Loading Data...\nThis may take a while.")
+        logger.debug(f"entering load_data,file_name={file_name}")
+
+        file_name_only = os.path.splitext(os.path.basename(file_name))[0]
+        logger.debug(f"file name only - {file_name_only}")
+        self.fixed_file = f"data/fixed_{file_name_only}.csv"
+
+        if not os.path.exists(self.fixed_file):
+            curr_f = f"data/corrupted_{file_name_only}.csv"
+            self.fix_corrupted_file(file_name, self.fixed_file, curr_f)
+
+        if not os.path.exists("pickles_can"):
+            logger.debug(f"create directory pickles_can")
+            os.makedirs("pickles_can")
+
+        if not os.path.exists(f"pickles_can/{file_name_only}.pkz"):
+            df = self.optimize_csv_file(self.fixed_file)
+            self.dump_to_pickle(df, file_name_only)
+
+        self.data = pd.read_pickle(f"pickles_can/{file_name_only}.pkz")
+        return self.data
+
+
+
+    def set_general_index(self, df):
+        logger.debug(f"entering set_index")
+        df_by_obj = df.set_index(['filename', 'obj']).sort_index()
+
+        return df_by_obj
+
+
+    def dump_to_pickle(self, df, pickle_name):
+        logger.debug(f"entering dump_to_pickle")
+        self.data = f"pickles_can/{pickle_name}.pkz"
+        df.to_pickle(f"pickles_can/{pickle_name}.pkz")
+
+
+    def set_time_row(self, df):
+        logger.debug(f"entering set_time_row")
+
+        df['sample_time'] = df.start
+        df['sample_time'] += pd.to_timedelta(df['delta_time'])
+
+        df.drop('start', 1)
+        df.drop('delta_time', 1)
+        df.drop('path_time', 1)
+
+        return df

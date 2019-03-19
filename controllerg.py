@@ -1,5 +1,4 @@
 import time
-
 from gui_view import Gui_View
 from filtermodel import FilterModel
 from collections import defaultdict
@@ -17,7 +16,8 @@ class Controller:
             'load_routes': self.load_image_routes,
             'show_grid': self.show_grid,
             'refresh': self.refresh_data,
-            'save': self.save
+            'save': self.save,
+            'merge': self.merge
         })
         self.view = Gui_View(funcs)  # hold view instance
         self.filters = defaultdict()
@@ -35,6 +35,14 @@ class Controller:
         tm = time.strftime("%Y%m%d-%H%M%S")
         self.filter_model.get_last_data().to_pickle(f"data/{tm}.pkl.xz")
 
+    def merge(self):
+        data = self.filter_model.get_last_data()
+        print(len(data))
+        if 0 < len(data) <= int(self.config['path_by_path_limit']):
+            self.view.plot_merge(data)
+        else:
+            self.view.status_update("not the right amount of routes")
+
     def load_data_file(self):  # load data file
         print("in load file")
         self.file = self.view.get_file()  # get the file path from view
@@ -46,6 +54,7 @@ class Controller:
         self.view.status_update("Loading Data. please wait a while")
         logger.debug(f"got file from view {self.file}")
         self.filter_model.set_file(self.file)  # set the file in model
+        print("after set")
         self.has_data = True
         self.view.status_update("Finished Loading Data")
 
@@ -68,7 +77,7 @@ class Controller:
             self.view.status_update("Can't load routes with no data you can to load default data with press button")
             return
         logger.debug(f"got filters {self.filters}")
-        df = None
+        df = {}
         if self.view.active_filters['area'].get():  # if filter by area is selected
             print("in area")
             area = self.view.area_filter.get()
@@ -80,7 +89,7 @@ class Controller:
             t1 = self.view.first_hour_filter.get()
             t2 = self.view.second_hour_filter.get()
             df = self.filter_model.filter_by_hours(str(t1), str(t2))
-            print("after hour",len(df))
+            print("after hour", len(df))
         if self.view.active_filters['date'].get():  # if filter by date+time is selected
             print("in date")
             t1 = self.view.first_dhour_filter.get()
@@ -90,11 +99,10 @@ class Controller:
         if self.view.active_filters["block"].get():  # if filter by areas is selected
             areas = self.view.block_filter.get().split(',')
             df = self.filter_model.filter_by_areas(areas)
-        if len(df) ==0:
+        if len(df) == 0:
             self.view.draw_image(self.image)
             self.view.status_update("no data applies")
         self.view.plot_image_and_routes(df)
 
     def run(self):
         self.view.master.mainloop()
-
