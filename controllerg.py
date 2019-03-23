@@ -4,7 +4,7 @@ from filtermodel import FilterModel
 from collections import defaultdict
 from settings import DEFUALT_IMAGE_FILE, DEFUALT_DATA_FILE, logger, GENERAL_SETTINGS
 from coverage.files import os
-
+import matplotlib.pyplot as plt
 
 class Controller:
     def __init__(self):
@@ -72,37 +72,84 @@ class Controller:
         self.view.draw_image(self.image)  # display image on screen
         self.view.status_update("Finished Loading img")
 
-    def load_image_routes(self):  # display the routes
-        if not self.has_data:
-            self.view.status_update("Can't load routes with no data you can to load default data with press button")
-            return
-        logger.debug(f"got filters {self.filters}")
-        df = {}
-        if self.view.active_filters['area'].get():  # if filter by area is selected
-            print("in area")
-            area = self.view.area_filter.get()
-            x1, y1, x2, y2 = area.split(',')
-            df = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
-            print("after area")
-        if self.view.active_filters['hour'].get():  # if filter by time is selected
-            print("in hour")
+    # def load_image_routes(self):  # display the routes
+    #     if not self.has_data:
+    #         self.view.status_update("Can't load routes with no data you can to load default data with press button")
+    #         return
+    #     logger.debug(f"got filters {self.filters}")
+    #     intersect_series = self.filter_model.last
+    #     df = {}
+    #     if self.view.active_filters['area'].get():  # if filter by area is selected
+    #         print("in area")
+    #         area = self.view.area_filter.get()
+    #         x1, y1, x2, y2 = area.split(',')
+    #         df = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
+    #         print("after area")
+    #     if self.view.active_filters['hour'].get():  # if filter by time is selected
+    #         print("in hour")
+    #         t1 = self.view.first_hour_filter.get()
+    #         t2 = self.view.second_hour_filter.get()
+    #         df = self.filter_model.filter_by_hours(str(t1), str(t2))
+    #         print("after hour", len(df))
+    #     if self.view.active_filters['date'].get():  # if filter by date+time is selected
+    #         print("in date")
+    #         t1 = self.view.first_dhour_filter.get()
+    #         t2 = self.view.second_dhour_filter.get()
+    #         date = self.view.date_filter.get()
+    #         df = self.filter_model.filter_by_date_and_hour(date, t1, t2)
+    #     if self.view.active_filters["block"].get():  # if filter by areas is selected
+    #         areas = self.view.block_filter.get().split(',')
+    #         df = self.filter_model.filter_by_areas(areas)
+    #     if len(df) == 0:
+    #         self.view.draw_image(self.image)
+    #         self.view.status_update("no data applies")
+    #
+    #     self.view.plot_image_and_routes((self.filter_model.df,df)
+
+    def load_image_routes(self):
+        intersect_series = self.filter_model.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        if self.view.active_filters['hour'].get():
             t1 = self.view.first_hour_filter.get()
             t2 = self.view.second_hour_filter.get()
-            df = self.filter_model.filter_by_hours(str(t1), str(t2))
-            print("after hour", len(df))
-        if self.view.active_filters['date'].get():  # if filter by date+time is selected
-            print("in date")
+            new_series = self.filter_model.filter_by_hours(str(t1), str(t2))
+            logger.debug(f"found {len(new_series)} routes by hour")
+
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if self.view.active_filters['area'].get():
+            area = self.view.area_filter.get()
+            x1, y1, x2, y2 = area.split(',')
+            new_series = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
+            logger.debug(f"found {len(new_series)} routes by area")
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if self.view.active_filters['date'].get():
             t1 = self.view.first_dhour_filter.get()
             t2 = self.view.second_dhour_filter.get()
             date = self.view.date_filter.get()
-            df = self.filter_model.filter_by_date_and_hour(date, t1, t2)
-        if self.view.active_filters["block"].get():  # if filter by areas is selected
+            new_series = self.filter_model.filter_by_date_and_hour(date, t1, t2)
+            logger.debug(f"found {len(new_series)} routes by date")
+
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if self.view.active_filters['block'].get():
+            # img = plt.imread(DEFUALT_IMAGE_FILE)
+            # logger.debug(f"-------{img.shape}")
             areas = self.view.block_filter.get().split(',')
-            df = self.filter_model.filter_by_areas(areas)
-        if len(df) == 0:
+            new_series = self.filter_model.filter_by_areas(areas)
+            logger.debug(new_series.head(3))
+            intersect_series = intersect_series[intersect_series.isin(new_series)]
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if len(intersect_series) == 0:
             self.view.draw_image(self.image)
             self.view.status_update("no data applies")
-        self.view.plot_image_and_routes(df)
+        print("got ", len(intersect_series))
+        return self.view.plot_image_and_routes((self.filter_model.df, intersect_series))
 
     def run(self):
         self.view.master.mainloop()

@@ -18,6 +18,7 @@ class FilterModel:
         #     self.last = self.df.set_index(['filename', 'obj']).sort_index()
         # except KeyError:
         self.last = self.df
+        self.times=self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
             # self.index_file=self.df
         # self.last = self.index_file
         # self.set_indexes()
@@ -35,34 +36,35 @@ class FilterModel:
         # self.last = self.df.set_index(['filename', 'obj']).sort_index()
 
     def filter_by_hours(self, begin, end):  # filter by specific hour range
-        objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
+        # objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
         # convert strings to datetime
         begin_time = pd.to_datetime(begin).time()
         end_time = pd.to_datetime(end).time()
 
-        min = objs.sample_time['min'].dt.time  # begining of the path
-        max = objs.sample_time['max'].dt.time  # end of the path
+        min = self.times.sample_time['min'].dt.time  # begining of the path
+        max = self.times.sample_time['max'].dt.time  # end of the path
 
-        items = objs[(min.between(begin_time, end_time)) | (
+        items = self.times[(min.between(begin_time, end_time)) | (
                 (min < begin_time) & (max > begin_time))]  # only paths in the time range
         self.set_last_data(items)
-        return self.to_arrays(items)
+        return items
+        # return self.to_arrays(items)
 
     def filter_by_date_and_hour(self, date, begin, end):  # filter by specific date and hour range
-        objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
+        # objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
         # convert strings to datetime
         date = pd.to_datetime(date)
         begin_time = date + pd.to_timedelta(begin)
         end_time = date + pd.to_timedelta(end)
 
-        min = objs[('sample_time', 'min')]  # begining of the path
-        max = objs[('sample_time', 'max')]  # end of the path
-        items = objs[
+        min = self.times[('sample_time', 'min')]  # begining of the path
+        max = self.times[('sample_time', 'max')]  # end of the path
+        items = self.times[
             (min.between(begin_time, end_time)) | (
                 (min.where(min < begin_time) & (max.where(max > begin_time))))]  # only paths in the date + time range
         self.set_last_data(items)
-        arr = self.to_arrays(items)
-        return arr
+        # arr = self.to_arrays(items)
+        return items
 
     def filter_area(self, x0, x1, y0, y1):  # returns data in specified area
         data_a = self.last[(self.last.x.between(x0, x1)) & (self.last.y.between(y0, y1))]
@@ -70,9 +72,12 @@ class FilterModel:
         return data_a
 
     def filter_by_area(self, x0, x1, y0, y1):  # filter by selecting a speific area by  top and bottom points
+        # print("in area")
         data_a = self.filter_area(x0, x1, y0, y1)
         self.set_last_data(data_a)
-        return self.to_arrays(data_a)
+        # print("after")
+        # return self.to_arrays(data_a)
+        return data_a
 
     def filter_by_areas(self, areas):  # filter by selecting sprecific areas by predefined image slices
         img = imread(DEFUALT_IMAGE_FILE)
@@ -93,17 +98,19 @@ class FilterModel:
                 intersect_series = new_series
             intersect_series = intersect_series.append(new_series)  # add to the result
         self.set_last_data(intersect_series.groupby(["filename", "obj"]).size())
-        return self.to_arrays(intersect_series.groupby(["filename", "obj"]).size())
+        return intersect_series.groupby(["filename", "obj"]).size()
+
+        # return self.to_arrays(intersect_series.groupby(["filename", "obj"]).size())
 
     # def no_filter(self):
     #     return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
 
-    def to_arrays(self, to_draw):  # returns an array of (xarray,yarray) tuples- points to draw for each object
-        points = []
-        for t in to_draw.index:
-            oo = self.last.loc[t]
-            points.append((oo.x, oo.y))
-        return points
+    # def to_arrays(self, to_draw):  # returns an array of (xarray,yarray) tuples- points to draw for each object
+    #     points = []
+    #     for t in to_draw.index:
+    #         oo = self.last.loc[t]
+    #         points.append((oo.x, oo.y))
+    #     return points
 
     def set_last_data(self, data_to_set):  # set last data state
         indexes = set(data_to_set.index.unique())
@@ -113,4 +120,5 @@ class FilterModel:
         # self.last = last_data
 
     def get_last_data(self):  # return last data state
-        return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
+        return self.last.groupby(["filename", "obj"]).size()
+        # return self.to_arrays(self.last.groupby(["filename", "obj"]).size())

@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 import matplotlib.pyplot as plt
+import pandas as pd
 from coverage.files import os
 import matplotlib.ticker as plticker
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -162,39 +163,94 @@ class Gui_View:
     #               ('double' if event.dblclick else 'single', event.button,
     #                event.x, event.y, event.xdata, event.ydata))
 
-    def plot_image_and_routes(self, data_obj):
-        l = len(data_obj)
-        logger.debug(f"plotting {l} routes")
-        lim = int(self.config['path_by_path_limit'])
-        # max_lim = int(self.config['start_draw_heatmap_limit'])
-        logger.debug(f"l={l},lim={lim}")
-        if l > lim:
-            self.plot_all_routes(data_obj)
-        elif l>0:
-            MsgBox = tk.messagebox.askquestion('One by One?', 'Would you like to plot routes one by one?')
-            if MsgBox == 'yes':
-                self.plot_one_by_one(data_obj)
-            else:
-                self.plot_all_routes(data_obj)
+    # def plot_image_and_routes(self, data_obj):
+    #     l = len(data_obj)
+    #     logger.debug(f"plotting {l} routes")
+    #     lim = int(self.config['path_by_path_limit'])
+    #     # max_lim = int(self.config['start_draw_heatmap_limit'])
+    #     logger.debug(f"l={l},lim={lim}")
+    #     if l > lim:
+    #         self.plot_all_routes(data_obj)
+    #     elif l>0:
+    #         MsgBox = tk.messagebox.askquestion('One by One?', 'Would you like to plot routes one by one?')
+    #         if MsgBox == 'yes':
+    #             self.plot_one_by_one(data_obj)
+    #         else:
+    #             self.plot_all_routes(data_obj)
+    #
+    # def plot_all_routes(self, to_draw):  # plot all routes together
+    #     logger.debug(f"entering plot_all_routes with {len(to_draw)} routes")
+    #     im = plt.imread(self.image_name)
+    #     # print(f"in plot all routes len {len(to_draw)}")
+    #     plt.imshow(im)
+    #     for x, y in to_draw:
+    #         plt.plot(x, y)
+    #     plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
+    #     self.canvas.draw()
+    #     plt.gcf().clear()
+    #     # print("after plot all routes")
+    #
+    # def plot_one_by_one(self, to_draw):  # plot each route individually
+    #     logger.debug(f"entering plot_one_by_one with {len(to_draw)} routes")
+    #     im = plt.imread(self.image_name)
+    #     for x, y in to_draw:
+    #         plt.imshow(im)
+    #         plt.plot(x, y)
+    #         self.canvas.draw()
+    #         self.master.after(500)
+    #         plt.gcf().clear()
 
-    def plot_all_routes(self, to_draw):  # plot all routes together
-        logger.debug(f"entering plot_all_routes with {len(to_draw)} routes")
+    def plot_image_and_routes(self, data_obj):
+        dataframe, df_obj = data_obj
+        # df_obj = df_obj.head(15)
+        l = len(df_obj)
+        logger.debug(f"plotting {l} routes")
+
+        lim = int(self.config['path_by_path_limit'])
+        max_lim = int(self.config['start_draw_heatmap_limit'])
+        logger.debug(f"l={l},lim={lim},max_lim={max_lim}")
+        if l < max_lim and l > lim:
+            self.plot_all_routes(dataframe, df_obj)
+        elif l <= lim:
+            # self.plot_all_routes(dataframe, df_obj)
+            self.plot_one_by_one(dataframe, df_obj)
+        else:
+            self.plot_heatmap(dataframe, df_obj)
+
+    def plot_all_routes(self, dataframe, df_obj):
+        logger.debug(f"entering plot_all_routes with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
-        # print(f"in plot all routes len {len(to_draw)}")
         plt.imshow(im)
-        for x, y in to_draw:
-            plt.plot(x, y)
+        # self.draw_grid()
+        for t in df_obj.index:
+            oo = dataframe.loc[t]
+            plt.plot(oo.x, oo.y)
         plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
-        # print("after plot all routes")
 
-    def plot_one_by_one(self, to_draw):  # plot each route individually
-        logger.debug(f"entering plot_one_by_one with {len(to_draw)} routes")
+    def plot_heatmap(self, dataframe, df_obj):
+        logger.debug(f"entering plot_heatmap with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
-        for x, y in to_draw:
+        plt.imshow(im)
+        count = pd.DataFrame({'count': dataframe.loc[df_obj.index].groupby(["x", "y"]).size()}).reset_index()
+        mat_count = count.pivot('y', 'x', 'count').values
+        plt.imshow(mat_count, cmap=plt.get_cmap("hsv"), interpolation='nearest')
+        plt.colorbar()
+        # plt.pause(0.5)
+        # plt.gcf().clear()
+        self.canvas.draw()
+        plt.gcf().clear()
+
+    def plot_one_by_one(self, dataframe, df_obj):
+        logger.debug(f"entering plot_one_by_one with {len(df_obj)} routes")
+        im = plt.imread(self.image_name)
+
+        # self.draw_grid()
+        for t in df_obj.index:
             plt.imshow(im)
-            plt.plot(x, y)
+            oo = dataframe.loc[t]
+            plt.plot(oo.x, oo.y)
             self.canvas.draw()
             self.master.after(500)
             plt.gcf().clear()
