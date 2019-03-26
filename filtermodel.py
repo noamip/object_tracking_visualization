@@ -18,22 +18,11 @@ class FilterModel:
         #     self.last = self.df.set_index(['filename', 'obj']).sort_index()
         # except KeyError:
         self.last = self.df
-        self.times=self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
-            # self.index_file=self.df
-        # self.last = self.index_file
-        # self.set_indexes()
+        self.times = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
 
-    # def set_indexes(self):
-    #     try:
-    #         self.last = self.df.set_index(['filename', 'obj']).sort_index()
-    #     except KeyError:
-    #         self.last = self.df
-    #     self.data_by_time = self.df.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
 
     def reset_data(self):
-        # self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
         self.last = self.df
-        # self.last = self.df.set_index(['filename', 'obj']).sort_index()
 
     def filter_by_hours(self, begin, end):  # filter by specific hour range
         # objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
@@ -54,14 +43,17 @@ class FilterModel:
         # objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
         # convert strings to datetime
         date = pd.to_datetime(date)
+
         begin_time = date + pd.to_timedelta(begin)
         end_time = date + pd.to_timedelta(end)
 
         min = self.times[('sample_time', 'min')]  # begining of the path
         max = self.times[('sample_time', 'max')]  # end of the path
-        items = self.times[
-            (min.between(begin_time, end_time)) | (
+        try:
+            items = self.times[(min.between(begin_time, end_time)) | (
                 (min.where(min < begin_time) & (max.where(max > begin_time))))]  # only paths in the date + time range
+        except BaseException:
+            items = pd.DataFrame()
         self.set_last_data(items)
         # arr = self.to_arrays(items)
         return items
@@ -97,28 +89,44 @@ class FilterModel:
             if intersect_series.empty:  # no data in it yet
                 intersect_series = new_series
             intersect_series = intersect_series.append(new_series)  # add to the result
+
         self.set_last_data(intersect_series.groupby(["filename", "obj"]).size())
         return intersect_series.groupby(["filename", "obj"]).size()
-
-        # return self.to_arrays(intersect_series.groupby(["filename", "obj"]).size())
-
-    # def no_filter(self):
-    #     return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
-
-    # def to_arrays(self, to_draw):  # returns an array of (xarray,yarray) tuples- points to draw for each object
-    #     points = []
-    #     for t in to_draw.index:
-    #         oo = self.last.loc[t]
-    #         points.append((oo.x, oo.y))
-    #     return points
 
     def set_last_data(self, data_to_set):  # set last data state
         indexes = set(data_to_set.index.unique())
         self.last = self.last[self.last.index.isin(indexes)]
-        # last_data = self.index_file[self.index_file.index.isin(indexes)]
-        # print("in set last len", len(last_data))
-        # self.last = last_data
 
     def get_last_data(self):  # return last data state
-        return self.last.groupby(["filename", "obj"]).size()
-        # return self.to_arrays(self.last.groupby(["filename", "obj"]).size())
+        return self.last
+
+    def apply_filters(self, filters):
+        intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        if 'hour' in filters.keys():
+            new_series = self.filter_by_hours(filters['hour'][0], filters['hour'][1])
+            # logger.debug(f"found {len(new_series)} routes by hour")
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if 'area' in filters.keys():
+            new_series = self.filter_by_area(filters['area'][0], filters['area'][1], filters['area'][2],
+                                             filters['area'][3])
+            # logger.debug(f"found {len(new_series)} routes by area")
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if 'date' in filters.keys():
+            new_series = self.filter_by_date_and_hour(filters['date'][0], filters['date'][1], filters['date'][2])
+            # logger.debug(f"found {len(new_series)} routes by date")
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        if 'block' in filters.keys():
+            new_series = self.filter_by_areas(filters['block'])
+            # logger.debug(new_series.head(3))
+            intersect_series = intersect_series[intersect_series.isin(new_series)]
+            indx_list = intersect_series.index.intersection(new_series.index)
+            intersect_series = intersect_series.loc[indx_list]
+
+        print("got ", len(intersect_series))
+        return (self.last, intersect_series)

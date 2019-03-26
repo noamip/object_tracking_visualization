@@ -128,20 +128,13 @@ class Gui_View:
 
         # merge button=============
         self.merge = tk.Button(self.master_panel, text="Merge Routes", command=self.funcs['merge'],
-                                 height=1, width=17, bg='lightGray', font=("Arial", 11))
+                               height=1, width=17, bg='lightGray', font=("Arial", 11))
         self.merge.grid(row=14, column=5, columnspan=1, pady=(6, 0))
 
         # save button=============
         self.save = tk.Button(self.master_panel, text="Save Current", command=self.funcs['save'],
                               height=1, width=17, bg='lightGray', font=("Arial", 11))
         self.save.grid(row=15, column=4, columnspan=1, pady=(6, 0))
-
-    # def draw_bottom_panel(self):#draw output-status panel
-    #     self.status_message = tk.Message(self.master_panel, text="Program Output", bg='lightGray', borderwidth=5,
-    #                                      anchor=tk.NW,
-    #                                      width=800, highlightbackground="black", highlightthickness=1,
-    #                                      font=("Arial", 14))
-    #     self.status_message.grid(row=14, column=0, columnspan=4)
 
     def draw_image(self, image_name):  # display image on screen
         image = plt.imread(image_name)
@@ -163,43 +156,6 @@ class Gui_View:
     #               ('double' if event.dblclick else 'single', event.button,
     #                event.x, event.y, event.xdata, event.ydata))
 
-    # def plot_image_and_routes(self, data_obj):
-    #     l = len(data_obj)
-    #     logger.debug(f"plotting {l} routes")
-    #     lim = int(self.config['path_by_path_limit'])
-    #     # max_lim = int(self.config['start_draw_heatmap_limit'])
-    #     logger.debug(f"l={l},lim={lim}")
-    #     if l > lim:
-    #         self.plot_all_routes(data_obj)
-    #     elif l>0:
-    #         MsgBox = tk.messagebox.askquestion('One by One?', 'Would you like to plot routes one by one?')
-    #         if MsgBox == 'yes':
-    #             self.plot_one_by_one(data_obj)
-    #         else:
-    #             self.plot_all_routes(data_obj)
-    #
-    # def plot_all_routes(self, to_draw):  # plot all routes together
-    #     logger.debug(f"entering plot_all_routes with {len(to_draw)} routes")
-    #     im = plt.imread(self.image_name)
-    #     # print(f"in plot all routes len {len(to_draw)}")
-    #     plt.imshow(im)
-    #     for x, y in to_draw:
-    #         plt.plot(x, y)
-    #     plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
-    #     self.canvas.draw()
-    #     plt.gcf().clear()
-    #     # print("after plot all routes")
-    #
-    # def plot_one_by_one(self, to_draw):  # plot each route individually
-    #     logger.debug(f"entering plot_one_by_one with {len(to_draw)} routes")
-    #     im = plt.imread(self.image_name)
-    #     for x, y in to_draw:
-    #         plt.imshow(im)
-    #         plt.plot(x, y)
-    #         self.canvas.draw()
-    #         self.master.after(500)
-    #         plt.gcf().clear()
-
     def plot_image_and_routes(self, data_obj):
         dataframe, df_obj = data_obj
         # df_obj = df_obj.head(15)
@@ -212,8 +168,11 @@ class Gui_View:
         if l < max_lim and l > lim:
             self.plot_all_routes(dataframe, df_obj)
         elif l <= lim:
-            # self.plot_all_routes(dataframe, df_obj)
-            self.plot_one_by_one(dataframe, df_obj)
+            MsgBox = tk.messagebox.askquestion('One by One?', 'Would you like to plot routes one by one?')
+            if MsgBox == 'yes':
+                self.plot_one_by_one(dataframe, df_obj)
+            else:
+                self.plot_all_routes(dataframe, df_obj)
         else:
             self.plot_heatmap(dataframe, df_obj)
 
@@ -307,9 +266,6 @@ class Gui_View:
             return None
         return self.img_entry.get()
 
-    # def place_holder(self):
-    #     print("button clicked")
-
     def error_input(self, msg):
         self.status_message.configure(text=f"Curropted input. Task aborted:{msg}")
 
@@ -321,16 +277,16 @@ class Gui_View:
         self.image_name = image_name
         self.img = plt.imread(image_name)
 
-    def plot_merge(self, data):
+    def plot_merge(self, dataframe, df_obj):
+        logger.debug(f"entering plot_all_routes with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
-        # print(f"in plot all routes len {len(to_draw)}")
         plt.imshow(im)
-        i=0
-        for x, y in data:
-            plt.plot(x, y,label=f"{i}")
-            i+=1
+        i = 0
+        for t in df_obj.index:
+            oo = dataframe.loc[t]
+            plt.plot(oo.x, oo.y, label=f"{i}")
+            i += 1
         plt.legend()
-        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
         result = self.ask_multiple_choice_question(
@@ -357,7 +313,7 @@ class Gui_View:
         # plt.legend()
         # plt.show()
 
-    def ask_multiple_choice_question(self,prompt, options):
+    def ask_multiple_choice_question(self, prompt, options):
         root = self.master
         if prompt:
             tk.Label(root, text=prompt)
@@ -368,3 +324,27 @@ class Gui_View:
         root.mainloop()
         if v.get() == 0: return None
         return options[v.get()]
+
+    def get_filters(self):
+        filters = {}
+        if self.active_filters['hour'].get():
+            t1 = self.first_hour_filter.get()
+            t2 = self.second_hour_filter.get()
+            filters['hour'] = (t1, t2)
+
+        if self.active_filters['area'].get():
+            area = self.area_filter.get()
+            x1, y1, x2, y2 = area.split(',')
+            filters['area'] = (int(x1), int(x2), int(y1), int(y2))
+
+        if self.active_filters['date'].get():
+            t1 = self.first_dhour_filter.get()
+            t2 = self.second_dhour_filter.get()
+            date = self.date_filter.get()
+            filters['date'] = (date, t1, t2)
+
+        if self.active_filters['block'].get():
+            areas = self.block_filter.get().split(',')
+            filters['block'] = areas
+
+        return filters
