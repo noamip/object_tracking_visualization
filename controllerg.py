@@ -38,20 +38,16 @@ class Controller:
 
     def merge(self):
 
-        data = self.filter_model.get_last_data().groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        # intersect_series = self.filter_model.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        # print('1',len(intersect_series),len(data))
-        # if "block" in self.filters.keys():
-        #     intersect_series = intersect_series[intersect_series.isin(data)]
-        #     print('2', len(intersect_series))
-        #
-        # indx_list = intersect_series.index.intersection(data.index)
-        # intersect_series = intersect_series.loc[indx_list]
-
+        data = self.view.last_plotted
         if 0 < len(data) <= int(self.config['path_by_path_limit']):
             self.view.plot_merge(self.filter_model.df, data)
+            print("after plot")
+            self.view.get_routes_for_merge()
+            # self.view.show_entry_fields()
         else:
             self.view.status_update("not the right amount of routes")
+
+
 
     def load_data_file(self):  # load data file
         print("in load file")
@@ -92,6 +88,7 @@ class Controller:
             if len(res[1])==0:
                 self.view.status_update("no data applies")
             else:
+
                 self.view.plot_image_and_routes(res)
 
 

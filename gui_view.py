@@ -160,6 +160,7 @@ class Gui_View:
         dataframe, df_obj = data_obj
         # df_obj = df_obj.head(15)
         l = len(df_obj)
+        self.last_plotted = df_obj
         logger.debug(f"plotting {l} routes")
 
         lim = int(self.config['path_by_path_limit'])
@@ -204,7 +205,6 @@ class Gui_View:
     def plot_one_by_one(self, dataframe, df_obj):
         logger.debug(f"entering plot_one_by_one with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
-
         # self.draw_grid()
         for t in df_obj.index:
             plt.imshow(im)
@@ -289,41 +289,7 @@ class Gui_View:
         plt.legend()
         self.canvas.draw()
         plt.gcf().clear()
-        result = self.ask_multiple_choice_question(
-            "What is your favorite color?",
-            [
-                "Blue!",
-                "No -- Yellow!",
-                "Aaaaargh!"
-            ]
-        )
 
-        print("User's response was: {}".format(repr(result)))
-        # self.listbox = tk.Listbox(self.master_panel)
-        # self.listbox.insert(tk.END, "a list entry")
-        #
-        # for item in range(len(data)):
-        #     self.listbox.insert(tk.END, item)
-        #
-        # self.listbox.grid(row=10, column=1,columnspan=2)
-        # # tk.mainloop()
-
-        # plt.plot(x_A, y_A, 'g--', label="plot A")
-        # plt.plot(x_B, y_B, 'r-o', label="plot A")
-        # plt.legend()
-        # plt.show()
-
-    def ask_multiple_choice_question(self, prompt, options):
-        root = self.master
-        if prompt:
-            tk.Label(root, text=prompt)
-        v = tk.IntVar()
-        for i, option in enumerate(options):
-            tk.Radiobutton(root, text=option, variable=v, value=i)
-        tk.Button(text="Submit", command=root.destroy)
-        root.mainloop()
-        if v.get() == 0: return None
-        return options[v.get()]
 
     def get_filters(self):
         filters = {}
@@ -348,3 +314,31 @@ class Gui_View:
             filters['block'] = areas
 
         return filters
+
+    def get_routes_for_merge(self):
+        print('in get routes')
+        self.routes_root = tk.Tk()
+
+        yScroll = tk.Scrollbar(self.routes_root, orient=tk.VERTICAL)
+        yScroll.grid(row=0, column=1, sticky=tk.N + tk.S)
+        self.routes = tk.Listbox(self.routes_root,selectmode='multiple', yscrollcommand=yScroll.set)
+
+        for i in range(len(self.last_plotted)):
+         self.routes.insert(i,i)
+        self.routes.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+        yScroll['command'] = self.routes.yview
+        tk.Button(self.routes_root, text='merge', command=self.show_entry_fields).grid(column=1, sticky=tk.E, pady=4)
+        self.routes_root.mainloop()
+        print('after get routes')
+
+
+    def show_entry_fields(self):
+        if len(self.routes.curselection())!=2:
+            self.status_update("can only merge 2 routes")
+        else:
+            r1,r2 = self.routes.curselection()
+            print(r1,r2)
+        self.routes_root.destroy()
+
+
+
