@@ -161,6 +161,7 @@ class Gui_View:
         # df_obj = df_obj.head(15)
         l = len(df_obj)
         self.last_plotted = df_obj
+        self.data = dataframe
         logger.debug(f"plotting {l} routes")
 
         lim = int(self.config['path_by_path_limit'])
@@ -290,7 +291,6 @@ class Gui_View:
         self.canvas.draw()
         plt.gcf().clear()
 
-
     def get_filters(self):
         filters = {}
         if self.active_filters['hour'].get():
@@ -321,24 +321,74 @@ class Gui_View:
 
         yScroll = tk.Scrollbar(self.routes_root, orient=tk.VERTICAL)
         yScroll.grid(row=0, column=1, sticky=tk.N + tk.S)
-        self.routes = tk.Listbox(self.routes_root,selectmode='multiple', yscrollcommand=yScroll.set)
+        self.routes = tk.Listbox(self.routes_root, selectmode='multiple', yscrollcommand=yScroll.set)
 
         for i in range(len(self.last_plotted)):
-         self.routes.insert(i,i)
-        self.routes.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+            self.routes.insert(i, i)
+        self.routes.grid(row=0, column=0, sticky=tk.N + tk.S + tk.E + tk.W)
         yScroll['command'] = self.routes.yview
         tk.Button(self.routes_root, text='merge', command=self.show_entry_fields).grid(column=1, sticky=tk.E, pady=4)
         self.routes_root.mainloop()
         print('after get routes')
 
-
     def show_entry_fields(self):
-        if len(self.routes.curselection())!=2:
+        if len(self.routes.curselection()) != 2:
             self.status_update("can only merge 2 routes")
         else:
-            r1,r2 = self.routes.curselection()
-            print(r1,r2)
+            r1, r2 = self.routes.curselection()
+            print(r1, r2)
+            plt.imshow(self.img)
+            oo1 = self.data.loc[self.last_plotted.index[r1]]
+
+            last_x = oo1.x[-1]
+            last_y = oo1.y[-1]
+
+            oo2 = self.data.loc[self.last_plotted.index[r2]]
+            first_x = oo2.x[0]
+            first_y = oo2.y[0]
+
+            points_x,points_y = get_line(last_x,last_y,first_x,first_y)
+            to_plot_x = pd.concat([oo1.x,points_x, oo2.x])
+            to_plot_y = pd.concat([oo1.y,points_y,oo2.y])
+            plt.plot(to_plot_x, to_plot_y)
+            self.canvas.draw()
         self.routes_root.destroy()
 
 
-
+def get_line(x1, y1, x2, y2):
+    points_x = pd.Series()
+    points_y = pd.Series()
+    issteep = abs(y2-y1) > abs(x2-x1)
+    if issteep:
+        x1, y1 = y1, x1
+        x2, y2 = y2, x2
+    rev = False
+    if x1 > x2:
+        x1, x2 = x2, x1
+        y1, y2 = y2, y1
+        rev = True
+    deltax = x2 - x1
+    deltay = abs(y2-y1)
+    error = int(deltax / 2)
+    y = y1
+    ystep = None
+    if y1 < y2:
+        ystep = 1
+    else:
+        ystep = -1
+    for x in range(x1, x2 + 1):
+        if issteep:
+            points_x.add(y)
+            points_y.add(x)
+        else:
+            points_x.add(x)
+            points_y.add(y)
+        error -= deltay
+        if error < 0:
+            y += ystep
+            error += deltax
+    # Reverse the list if the coordinates were reversed
+    if rev:
+        points_x.reindex(index=points_x.index[::-1])
+        points_y.reindex(index=points_y.index[::-1])
+    return (points_x,points_y)
