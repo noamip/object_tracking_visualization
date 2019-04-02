@@ -190,6 +190,13 @@ class Gui_View:
         self.canvas.draw()
         plt.gcf().clear()
 
+    def plot_points(self,to_plot_x,to_plot_y):
+        plt.imshow(self.img)
+        plt.plot(to_plot_x, to_plot_y)
+        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
+        self.canvas.draw()
+        self.routes_root.destroy()
+
     def plot_heatmap(self, dataframe, df_obj):
         logger.debug(f"entering plot_heatmap with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
@@ -200,6 +207,7 @@ class Gui_View:
         plt.colorbar()
         # plt.pause(0.5)
         # plt.gcf().clear()
+        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
 
@@ -316,7 +324,7 @@ class Gui_View:
         return filters
 
     def get_routes_for_merge(self):
-        print('in get routes')
+        # print('in get routes')
         self.routes_root = tk.Tk()
 
         yScroll = tk.Scrollbar(self.routes_root, orient=tk.VERTICAL)
@@ -327,68 +335,18 @@ class Gui_View:
             self.routes.insert(i, i)
         self.routes.grid(row=0, column=0, sticky=tk.N + tk.S + tk.E + tk.W)
         yScroll['command'] = self.routes.yview
-        tk.Button(self.routes_root, text='merge', command=self.show_entry_fields).grid(column=1, sticky=tk.E, pady=4)
+        tk.Button(self.routes_root, text='merge', command=self.funcs['merge_select']).grid(column=1, sticky=tk.E, pady=4)
         self.routes_root.mainloop()
-        print('after get routes')
+        # print('after get routes')
 
-    def show_entry_fields(self):
+    def get_routes_selected(self):
         if len(self.routes.curselection()) != 2:
-            self.status_update("can only merge 2 routes")
+           return None
         else:
             r1, r2 = self.routes.curselection()
-            print(r1, r2)
-            plt.imshow(self.img)
             oo1 = self.data.loc[self.last_plotted.index[r1]]
-
-            last_x = oo1.x[-1]
-            last_y = oo1.y[-1]
-
             oo2 = self.data.loc[self.last_plotted.index[r2]]
-            first_x = oo2.x[0]
-            first_y = oo2.y[0]
-
-            points_x,points_y = get_line(last_x,last_y,first_x,first_y)
-            to_plot_x = pd.concat([oo1.x,points_x, oo2.x])
-            to_plot_y = pd.concat([oo1.y,points_y,oo2.y])
-            plt.plot(to_plot_x, to_plot_y)
-            self.canvas.draw()
-        self.routes_root.destroy()
+            return(oo1,oo2)
 
 
-def get_line(x1, y1, x2, y2):
-    points_x = pd.Series()
-    points_y = pd.Series()
-    issteep = abs(y2-y1) > abs(x2-x1)
-    if issteep:
-        x1, y1 = y1, x1
-        x2, y2 = y2, x2
-    rev = False
-    if x1 > x2:
-        x1, x2 = x2, x1
-        y1, y2 = y2, y1
-        rev = True
-    deltax = x2 - x1
-    deltay = abs(y2-y1)
-    error = int(deltax / 2)
-    y = y1
-    ystep = None
-    if y1 < y2:
-        ystep = 1
-    else:
-        ystep = -1
-    for x in range(x1, x2 + 1):
-        if issteep:
-            points_x.add(y)
-            points_y.add(x)
-        else:
-            points_x.add(x)
-            points_y.add(y)
-        error -= deltay
-        if error < 0:
-            y += ystep
-            error += deltax
-    # Reverse the list if the coordinates were reversed
-    if rev:
-        points_x.reindex(index=points_x.index[::-1])
-        points_y.reindex(index=points_y.index[::-1])
-    return (points_x,points_y)
+

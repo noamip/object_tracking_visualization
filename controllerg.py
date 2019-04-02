@@ -17,7 +17,8 @@ class Controller:
             'show_grid': self.show_grid,
             'refresh': self.refresh_data,
             'save': self.save,
-            'merge': self.merge
+            'merge': self.merge,
+            'merge_select':self.merge_select
         })
         self.view = Gui_View(funcs)  # hold view instance
         self.filters = defaultdict()
@@ -37,15 +38,24 @@ class Controller:
         self.filter_model.get_last_data().to_pickle(f"data/{tm}.pkl.xz")
 
     def merge(self):
-
         data = self.view.last_plotted
         if 0 < len(data) <= int(self.config['path_by_path_limit']):
             self.view.plot_merge(self.filter_model.df, data)
             print("after plot")
             self.view.get_routes_for_merge()
-            # self.view.show_entry_fields()
+
         else:
-            self.view.status_update("not the right amount of routes")
+            self.view.status_update("not the right amount of routes for merging.")
+
+    def merge_select(self):
+        if len(self.view.get_routes_selected()) != 2:
+            self.view.status_update("can only merge 2 routes")
+        else:
+            oo1,oo2=self.view.get_routes_selected()
+            plt1,plt2= self.filter_model.merge_routes(oo1,oo2)
+            self.view.plot_points(plt1,plt2)
+
+
 
 
 
@@ -140,3 +150,5 @@ class Controller:
 
     def run(self):
         self.view.master.mainloop()
+
+

@@ -8656,3 +8656,532 @@ DEBUG:matplotlib.axes._base:update_title_pos
 DEBUG:settings:entering plot_all_routes with 7 routes
 DEBUG:matplotlib.axes._base:update_title_pos
 DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 4463 routes
+DEBUG:settings:l=4463,lim=30,max_lim=2000
+DEBUG:settings:entering plot_heatmap with 4463 routes
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x112D8770>
+DEBUG:matplotlib.colorbar:Using auto colorbar locator on colorbar
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x112D8770>
+DEBUG:matplotlib.colorbar:Setting pcolormesh
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 4463 routes
+DEBUG:settings:l=4463,lim=30,max_lim=2000
+DEBUG:settings:entering plot_heatmap with 4463 routes
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x0E1D57B0>
+DEBUG:matplotlib.colorbar:Using auto colorbar locator on colorbar
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x0E1D57B0>
+DEBUG:matplotlib.colorbar:Setting pcolormesh
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 43 routes
+DEBUG:settings:l=43,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 43 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 50 routes
+DEBUG:settings:l=50,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 50 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 88 routes
+DEBUG:settings:l=88,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 88 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 1412 routes
+DEBUG:settings:l=1412,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 1412 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 4463 routes
+DEBUG:settings:l=4463,lim=30,max_lim=2000
+DEBUG:settings:entering plot_heatmap with 4463 routes
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x28333690>
+DEBUG:matplotlib.colorbar:Using auto colorbar locator on colorbar
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x28333690>
+DEBUG:matplotlib.colorbar:Setting pcolormesh
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 88 routes
+DEBUG:settings:l=88,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 88 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 79 routes
+DEBUG:settings:l=79,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 79 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 14 routes
+DEBUG:settings:l=14,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 14 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 14 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 66 routes
+DEBUG:settings:l=66,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 66 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 3 routes
+DEBUG:settings:l=3,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 3 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 3 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 19 routes
+DEBUG:settings:l=19,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 19 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:enter draw grid 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 57
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 147 8192
+DEBUG:PIL.Image:Error closing: 'NoneType' object has no attribute 'close'
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 368 routes
+DEBUG:settings:l=368,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 368 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 12 routes
+DEBUG:settings:l=12,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 80 routes
+DEBUG:settings:l=80,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 80 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 4 routes
+DEBUG:settings:l=4,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 4 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 4 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 385 routes
+DEBUG:settings:l=385,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 385 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 17 routes
+DEBUG:settings:l=17,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 17 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 17 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 385 routes
+DEBUG:settings:l=385,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 385 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 95 routes
+DEBUG:settings:l=95,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 95 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos

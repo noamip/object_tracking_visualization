@@ -20,7 +20,6 @@ class FilterModel:
         self.last = self.df
         self.times = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
 
-
     def reset_data(self):
         self.last = self.df
 
@@ -35,6 +34,7 @@ class FilterModel:
 
         items = self.times[(min.between(begin_time, end_time)) | (
                 (min < begin_time) & (max > begin_time))]  # only paths in the time range
+
         self.set_last_data(items)
         return items
         # return self.to_arrays(items)
@@ -54,6 +54,7 @@ class FilterModel:
                 (min.where(min < begin_time) & (max.where(max > begin_time))))]  # only paths in the date + time range
         except BaseException:
             items = pd.DataFrame()
+
         self.set_last_data(items)
         # arr = self.to_arrays(items)
         return items
@@ -130,3 +131,70 @@ class FilterModel:
 
         print("got ", len(intersect_series))
         return (self.last, intersect_series)
+
+    def merge_routes(self, oo1, oo2):
+        last_x = oo1.x[-1]
+        last_y = oo1.y[-1]
+
+        first_x = oo2.x[0]
+        first_y = oo2.y[0]
+
+
+        points_x, points_y = get_line(last_x, last_y, first_x, first_y)
+        to_plot_x = pd.concat([oo1.x, points_x, oo2.x])
+        to_plot_y = pd.concat([oo1.y, points_y, oo2.y])
+
+        # new_frame = oo1.frame[-1]
+        # new_stime = oo1.sample_time[-1]
+        # new_seq = oo1.seq[-1]
+        # new_size = oo1.size[-1]
+        # new_df = oo1
+        # for x,y in zip(to_plot_x,to_plot_y):
+        #     #df = pd.DataFrame({"filename":oo1.filename[-1],"obj":oo1.obj[-1],"frame":new_frame,"x":x,"y":y,"seq": new_seq,"sample_time":new_stime,"size":new_size} )
+        #     df=pd.DataFrame([[new_frame],[x],[y],[new_seq],[new_size],[new_stime]],index=oo1.index,columns=["frame","x","y","size","seq","sample_time"])
+        #     new_df.append(df)
+        #
+        # new_df.append(oo2)
+        # self.last.drop(oo2)
+        # self.last.update(new_df)
+
+        return (to_plot_x, to_plot_y)
+
+
+def get_line(x1, y1, x2, y2):
+    points_x = pd.Series()
+    points_y = pd.Series()
+    issteep = abs(y2 - y1) > abs(x2 - x1)
+    if issteep:
+        x1, y1 = y1, x1
+        x2, y2 = y2, x2
+    rev = False
+    if x1 > x2:
+        x1, x2 = x2, x1
+        y1, y2 = y2, y1
+        rev = True
+    deltax = x2 - x1
+    deltay = abs(y2 - y1)
+    error = int(deltax / 2)
+    y = y1
+    ystep = None
+    if y1 < y2:
+        ystep = 1
+    else:
+        ystep = -1
+    for x in range(x1, x2 + 1):
+        if issteep:
+            points_x.add(y)
+            points_y.add(x)
+        else:
+            points_x.add(x)
+            points_y.add(y)
+        error -= deltay
+        if error < 0:
+            y += ystep
+            error += deltax
+    # Reverse the list if the coordinates were reversed
+    if rev:
+        points_x.reindex(index=points_x.index[::-1])
+        points_y.reindex(index=points_y.index[::-1])
+    return (points_x, points_y)
