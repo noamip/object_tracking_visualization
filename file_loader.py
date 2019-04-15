@@ -13,7 +13,7 @@ class FileFixer:
         valid_counter = 0
         invalid_counter = 0
         # for line in fileinput.input(file_name):
-        with open(file_name, 'r') as datar, open(fixed_path, "w") as fixedw, open(
+        with open(file_name, 'r',encoding="utf-8") as datar, open(fixed_path, "w") as fixedw, open(
                 corrupted_path,
                 "w",
                 encoding="utf-8") as errorw:

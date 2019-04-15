@@ -35,7 +35,7 @@ class Controller:
 
     def save(self):  # save current data in current timestmap named file
         tm = time.strftime("%Y%m%d-%H%M%S")
-        self.filter_model.get_last_data().to_pickle(f"data/{tm}.pkl.xz")
+        self.filter_model.get_last_data().to_pickle(f"pickles_can/{tm}.pkz")
 
     def merge(self):
         data = self.view.last_plotted

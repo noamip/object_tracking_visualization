@@ -155,7 +155,7 @@ class FilterModel:
         #     new_df.append(df)
         #
         # new_df.append(oo2)
-        # self.last.drop(oo2)
+        # self.last.drop(oo2) h
         # self.last.update(new_df)
 
         return (to_plot_x, to_plot_y)
