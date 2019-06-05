@@ -5,6 +5,10 @@ from settings import logger
 import os.path
 
 class FileFixer:
+    def __init__(self):
+        self.pickle_path = f"pickles_can/oddetect.pkz"#!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
     def fix_corrupted_file(self, file_name, fixed_path, corrupted_path):
         logger.debug(
             f"entering fix_corrupted_file,file_name={file_name},fixed_path={fixed_path},corrupted_path={corrupted_path}")
@@ -66,8 +70,13 @@ class FileFixer:
         logger.debug(f"entering load_data,file_name={file_name}")
 
         file_name_only = os.path.splitext(os.path.basename(file_name))[0]
+
         logger.debug(f"file name only - {file_name_only}")
+
         self.fixed_file = f"data/fixed_{file_name_only}.csv"
+
+        self.pickle_path = f"pickles_can/{file_name_only}.pkz"
+        print("ppath",self.pickle_path)
 
         if not os.path.exists(self.fixed_file):
             curr_f = f"data/corrupted_{file_name_only}.csv"
@@ -77,14 +86,17 @@ class FileFixer:
             logger.debug(f"create directory pickles_can")
             os.makedirs("pickles_can")
 
-        if not os.path.exists(f"pickles_can/{file_name_only}.pkz"):
+        if not os.path.exists(self.pickle_path):
             df = self.optimize_csv_file(self.fixed_file)
             self.dump_to_pickle(df, file_name_only)
 
-        self.data = pd.read_pickle(f"pickles_can/{file_name_only}.pkz")
+
+        self.data = pd.read_pickle(self.pickle_path)
         return self.data
 
 
+    def get_pickle_path(self):
+        return self.pickle_path
 
     def set_general_index(self, df):
         logger.debug(f"entering set_index")

@@ -1,3 +1,5 @@
+import pickle
+
 import pandas as pd
 from pylab import imread
 import file_loader as ff
@@ -18,10 +20,12 @@ class FilterModel:
         #     self.last = self.df.set_index(['filename', 'obj']).sort_index()
         # except KeyError:
         self.last = self.df
+        print("in init", len(self.last), len(self.df))
         self.times = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
 
     def reset_data(self):
         self.last = self.df
+        print("data_refreshed",len(self.last),len(self.df))
 
     def filter_by_hours(self, begin, end):  # filter by specific hour range
         # objs = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
@@ -103,6 +107,7 @@ class FilterModel:
 
     def apply_filters(self, filters):
         intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        print("in apply ",len(self.last))
         if 'hour' in filters.keys():
             new_series = self.filter_by_hours(filters['hour'][0], filters['hour'][1])
             # logger.debug(f"found {len(new_series)} routes by hour")
@@ -144,6 +149,37 @@ class FilterModel:
         to_plot_x = pd.concat([oo1.x, points_x, oo2.x])
         to_plot_y = pd.concat([oo1.y, points_y, oo2.y])
 
+        print("columns",oo1.columns.values,list(oo1.index.levels[0])[-1])
+        new_filename=list(oo1.index.levels[0])[-1]
+        new_obj=list(oo1.index.levels[1])[-1]
+        new_frame = oo1.frame[-1]
+        new_stime = oo1.sample_time[-1]
+        new_ptime = oo1.path_time[-1]
+        new_dtime = oo1.delta_time[-1]
+        new_seq = oo1.seq[-1]
+        new_size = oo1.size
+        # new_df = oo1
+
+        for x, y in zip(to_plot_x, to_plot_y):
+         newp =[new_filename,new_obj,new_frame,x,y,new_size, new_seq,new_ptime,new_dtime,new_stime]
+         self.last.append(newp)
+
+        ffix=ff.FileFixer()
+        pkl_file= ffix.get_pickle_path()
+        # with open(pkl_file, 'wb') as wfp:
+        #     pickle.dump(self.last, wfp)#self.last
+        #
+        # # Re-load our database
+        # with open(pkl_file, 'rb') as rfp:
+        #     self.last = pickle.load(rfp)
+
+        intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+
+        # logger.debug(f"found {len(new_series)} routes by area")
+        indx_list = intersect_series.index.intersection( self.last.index)
+        intersect_series = intersect_series.loc[indx_list]
+        return (self.last, intersect_series)
+
         # new_frame = oo1.frame[-1]
         # new_stime = oo1.sample_time[-1]
         # new_seq = oo1.seq[-1]
@@ -158,7 +194,7 @@ class FilterModel:
         # self.last.drop(oo2) h
         # self.last.update(new_df)
 
-        return (to_plot_x, to_plot_y)
+        # return (to_plot_x, to_plot_y)
 
 
 def get_line(x1, y1, x2, y2):

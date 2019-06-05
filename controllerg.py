@@ -52,8 +52,10 @@ class Controller:
             self.view.status_update("can only merge 2 routes")
         else:
             oo1,oo2=self.view.get_routes_selected()
-            plt1,plt2= self.filter_model.merge_routes(oo1,oo2)
-            self.view.plot_points(plt1,plt2)
+            # plt1,plt2= self.filter_model.merge_routes(oo1,oo2)
+            res= self.filter_model.merge_routes(oo1,oo2)
+            self.view.plot_image_and_routes(res)
+            # self.view.plot_points(plt1,plt2)
 
 
 
@@ -67,7 +69,7 @@ class Controller:
             logger.debug(f"NOOOOO got file from view {self.file}")
             self.view.status_update("No such file in directory. loading default \n")
             self.file = DEFUALT_DATA_FILE
-        self.view.status_update("Loading Data. please wait a while")
+        # self.view.status_update("Loading Data. please wait a while")
         logger.debug(f"got file from view {self.file}")
         self.filter_model.set_file(self.file)  # set the file in model
         print("after set")
@@ -90,16 +92,16 @@ class Controller:
 
 
     def load_image_routes(self):
-        self.filters=self.view.get_filters()
-        if len(self.filters) == 0:
+        self.filters=self.view.get_filters()#get filters selected
+        if len(self.filters) == 0:#no filter selected
             self.view.status_update("no filters were selected")
         else:
-            res= self.filter_model.apply_filters(self.filters)
-            if len(res[1])==0:
+            print("filters to load",self.filters)
+            res= self.filter_model.apply_filters(self.filters)#apply filters on data
+            if len(res[1])==0: # no data applies
                 self.view.status_update("no data applies")
             else:
-
-                self.view.plot_image_and_routes(res)
+                self.view.plot_image_and_routes(res)# draw result on image
 
 
 

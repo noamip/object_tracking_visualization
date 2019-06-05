@@ -344,8 +344,8 @@ class Gui_View:
            return None
         else:
             r1, r2 = self.routes.curselection()
-            oo1 = self.data.loc[self.last_plotted.index[r1]]
-            oo2 = self.data.loc[self.last_plotted.index[r2]]
+            oo1 = self.data.loc[self.last_plotted.index[r1]] #first route to merge
+            oo2 = self.data.loc[self.last_plotted.index[r2]] #second route to merge
             return(oo1,oo2)
 
 
