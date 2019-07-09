@@ -1,3 +1,4 @@
+import copy
 import pickle
 
 import pandas as pd
@@ -5,7 +6,7 @@ from pylab import imread
 import file_loader as ff
 from settings import DEFUALT_IMAGE_FILE
 
-
+from coverage.files import os
 class FilterModel:
     def __init__(self):
         self.NUM_SLICE_Y = 10
@@ -144,57 +145,70 @@ class FilterModel:
         first_x = oo2.x[0]
         first_y = oo2.y[0]
 
+        print("last.type",type(self.last))
 
         points_x, points_y = get_line(last_x, last_y, first_x, first_y)
         to_plot_x = pd.concat([oo1.x, points_x, oo2.x])
         to_plot_y = pd.concat([oo1.y, points_y, oo2.y])
 
-        print("columns",oo1.columns.values,list(oo1.index.levels[0])[-1])
         new_filename=list(oo1.index.levels[0])[-1]
         new_obj=list(oo1.index.levels[1])[-1]
         new_frame = oo1.frame[-1]
         new_stime = oo1.sample_time[-1]
         new_ptime = oo1.path_time[-1]
         new_dtime = oo1.delta_time[-1]
+        new_start=oo1.start[-1]
         new_seq = oo1.seq[-1]
         new_size = oo1.size
-        # new_df = oo1
 
+        print("before",len(self.last),len(oo1.x),"len oo1",len(oo1))
+
+        print("columns",list(self.last.columns.values))
+        last = copy.deepcopy(self.last)
+        intersect_series = last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+
+        i=0
+        if os.path.exists("temp.csv"):
+         os.remove("temp.csv")
+
+
+        i=0
         for x, y in zip(to_plot_x, to_plot_y):
-         newp =[new_filename,new_obj,new_frame,x,y,new_size, new_seq,new_ptime,new_dtime,new_stime]
-         self.last.append(newp)
+            # newp = [new_filename, new_obj, new_frame, x,y,new_size,new_seq,new_start,new_ptime,new_dtime,new_stime]
+            # self.last.loc[len(self.last)]=newp
+            row = pd.Series({"frame":new_frame, "x":x,"y":y,"size":new_size,"seq":new_seq,"start":new_start
+                                ,"path_time":new_ptime,"delta_time":new_dtime,"sample_time":new_stime},index=[new_filename,new_obj])
+            self.last = self.last.append(row,ignore_index=True)
+            i += 1
 
-        ffix=ff.FileFixer()
-        pkl_file= ffix.get_pickle_path()
-        # with open(pkl_file, 'wb') as wfp:
-        #     pickle.dump(self.last, wfp)#self.last
-        #
-        # # Re-load our database
-        # with open(pkl_file, 'rb') as rfp:
-        #     self.last = pickle.load(rfp)
+        print("len last", len(self.last))
 
-        intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        self.last.to_csv("temp.csv", encoding='utf-8')
+        # with open("tmp.pkz", 'wb') as wfp:
+        #     pickle.dump(news, wfp)  # self.last
 
-        # logger.debug(f"found {len(new_series)} routes by area")
-        indx_list = intersect_series.index.intersection( self.last.index)
+#!!!!!!!!!!!!!!!its not a dataframe! not a csv file!!!!!!!!!!!!!!!!'''''
+
+
+
+        # Re-load our database
+        # with open("tmp.pkz", 'rb') as rfp:
+        #     print("reload")
+        #     tt = pickle.load(rfp)
+        tt = pd.read_csv("temp.csv")
+        print("after", len(tt.x),i)
+        # tt = tt.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+
+
+
+
+
+        indx_list = intersect_series.index.intersection(tt.index)
+        print("indx_list ", len(indx_list),tt.index.levels[0])
         intersect_series = intersect_series.loc[indx_list]
-        return (self.last, intersect_series)
+        print("got ", len(intersect_series))
+        return (last, intersect_series)
 
-        # new_frame = oo1.frame[-1]
-        # new_stime = oo1.sample_time[-1]
-        # new_seq = oo1.seq[-1]
-        # new_size = oo1.size[-1]
-        # new_df = oo1
-        # for x,y in zip(to_plot_x,to_plot_y):
-        #     #df = pd.DataFrame({"filename":oo1.filename[-1],"obj":oo1.obj[-1],"frame":new_frame,"x":x,"y":y,"seq": new_seq,"sample_time":new_stime,"size":new_size} )
-        #     df=pd.DataFrame([[new_frame],[x],[y],[new_seq],[new_size],[new_stime]],index=oo1.index,columns=["frame","x","y","size","seq","sample_time"])
-        #     new_df.append(df)
-        #
-        # new_df.append(oo2)
-        # self.last.drop(oo2) h
-        # self.last.update(new_df)
-
-        # return (to_plot_x, to_plot_y)
 
 
 def get_line(x1, y1, x2, y2):
