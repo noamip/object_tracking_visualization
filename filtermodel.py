@@ -155,6 +155,7 @@ class FilterModel:
         points_x, points_y = get_line(last_x, last_y, first_x, first_y)
         to_plot_x = pd.concat([oo1.x, points_x, oo2.x])
         to_plot_y = pd.concat([oo1.y, points_y, oo2.y])
+       #!!!!!!!!!!!! print("oo1.filename",oo1.index.levels[0])
 
         new_filename=list(oo1.index.levels[0])[-1]
         new_obj=list(oo1.index.levels[1])[-1]
@@ -181,36 +182,20 @@ class FilterModel:
         self.last=self.last.reset_index()
         # print("after reset last\n", self.last.head(5))
         for x, y in zip(to_plot_x, to_plot_y):
-            new_row=pd.DataFrame({"filename":new_filename,"obj":new_obj,"frame":new_frame, "x":x,"y":y,"size":new_size,"seq":new_seq,"start":new_start,"path_time":new_ptime,"delta_time":new_dtime,"sample_time":new_stime},index=["filename", "obj"])
-            self.last = self.last.append(new_row)
+            new_row = pd.DataFrame({"filename":new_filename,"obj":new_obj,"frame":new_frame, "x":x,"y":y,"size":new_size,"seq":new_seq,"start":new_start,"path_time":new_ptime,"delta_time":new_dtime,"sample_time":new_stime},index=["filename", "obj"])
+            self.last = self.last.append(new_row,ignore_index=True)
             i += 1
 
 
-        print("after last\n", self.last.head(5))#, self.last.index.levels
-        self.last.to_csv("temp.csv", encoding='utf-8')
-
-
-        self.last = pd.read_csv("temp.csv")
-
-
+        print("after last\n", self.last.head(2),"\n",self.last.tail(3))#, self.last.index.levels
+        print("after", len(self.last), len(oo1.x), "len oo1", len(oo1))
 
         intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        # indx_list = intersect_series.index.intersection(self.last.index)
         self.last = self.last.set_index(["filename", 'obj']).sort_index()
-
         # print("indx_list ", len(indx_list))
-        # intersect_series = self.last.loc[intersect_series]
         print("got ", len(intersect_series))
-        # return (self.df, intersect_series)
         # print("last\n",self.last.head(5))
         return(intersect_series,self.last)
-        #
-        # intersect_series = self.df.groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        # indx_list = intersect_series.index.intersection(self.last.index)
-        # print("indx_list ", len(indx_list))
-        # intersect_series = intersect_series.loc[indx_list]
-        # print("got ", len(intersect_series))
-        # return (self.df, intersect_series)
 
 
 
