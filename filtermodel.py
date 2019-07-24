@@ -1,10 +1,21 @@
 import copy
-import pickle
-
 import pandas as pd
 from pylab import imread
 import file_loader as ff
 from settings import DEFUALT_IMAGE_FILE
+
+# print("in set file", self.last.head(5))
+# gg = self.last.head(5)
+# gg = gg.reset_index()
+# print("in set file reset\n", gg, len(gg))
+# ss = pd.DataFrame({"filename": "tttt.txt", "obj": 1111, "frame": 1, "x": 100, "y": 100, "size": 100, "seq": 100,
+#                    "start": self.last.head(1).start
+#                       , "path_time": self.last.head(1).path_time, "delta_time": self.last.head(1).delta_time,
+#                    "sample_time": self.last.head(1).sample_time})
+# ss.set_index(["filename", "obj"])
+# gg = gg.append(ss)
+# # print("in init", len(self.last), len(self.df))
+# print("in set file append", gg, len(gg))
 
 from coverage.files import os
 class FilterModel:
@@ -13,15 +24,9 @@ class FilterModel:
         self.NUM_SLICE_X = 10
 
     def set_file(self, file):  # , pic):
-        # self.img = imread(pic)
         file_fixer = ff.FileFixer()
-        self.df = file_fixer.load_data(file)  # 'data/paths.pkl.xz' pd.read_pickle('data/paths.pkl.xz')  #
-        # try:
-        #     # self.index_file = self.df.set_index(['filename', 'obj']).sort_index()
-        #     self.last = self.df.set_index(['filename', 'obj']).sort_index()
-        # except KeyError:
+        self.df = file_fixer.load_data(file)# 'data/paths.pkl.xz' pd.read_pickle('data/paths.pkl.xz')  #
         self.last = self.df
-        print("in init", len(self.last), len(self.df))
         self.times = self.last.groupby(["filename", "obj"]).agg({'sample_time': ['min', 'max']})
 
     def reset_data(self):
@@ -108,7 +113,7 @@ class FilterModel:
 
     def apply_filters(self, filters):
         intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        print("in apply ",len(self.last))
+        # print(" in apply\n ",self.last.head(5))
         if 'hour' in filters.keys():
             new_series = self.filter_by_hours(filters['hour'][0], filters['hour'][1])
             # logger.debug(f"found {len(new_series)} routes by hour")
@@ -164,50 +169,48 @@ class FilterModel:
         print("before",len(self.last),len(oo1.x),"len oo1",len(oo1))
 
         print("columns",list(self.last.columns.values))
-        last = copy.deepcopy(self.last)
-        intersect_series = last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
 
-        i=0
+        last = copy.deepcopy(self.last)
+
         if os.path.exists("temp.csv"):
          os.remove("temp.csv")
 
 
         i=0
+        # print("before reset last\n", self.last.head(5))
+        self.last=self.last.reset_index()
+        # print("after reset last\n", self.last.head(5))
         for x, y in zip(to_plot_x, to_plot_y):
-            # newp = [new_filename, new_obj, new_frame, x,y,new_size,new_seq,new_start,new_ptime,new_dtime,new_stime]
-            # self.last.loc[len(self.last)]=newp
-            row = pd.Series({"frame":new_frame, "x":x,"y":y,"size":new_size,"seq":new_seq,"start":new_start
-                                ,"path_time":new_ptime,"delta_time":new_dtime,"sample_time":new_stime},index=[new_filename,new_obj])
-            self.last = self.last.append(row,ignore_index=True)
+            new_row=pd.DataFrame({"filename":new_filename,"obj":new_obj,"frame":new_frame, "x":x,"y":y,"size":new_size,"seq":new_seq,"start":new_start,"path_time":new_ptime,"delta_time":new_dtime,"sample_time":new_stime},index=["filename", "obj"])
+            self.last = self.last.append(new_row)
             i += 1
 
-        print("len last", len(self.last))
 
+        print("after last\n", self.last.head(5))#, self.last.index.levels
         self.last.to_csv("temp.csv", encoding='utf-8')
-        # with open("tmp.pkz", 'wb') as wfp:
-        #     pickle.dump(news, wfp)  # self.last
-
-#!!!!!!!!!!!!!!!its not a dataframe! not a csv file!!!!!!!!!!!!!!!!'''''
 
 
-
-        # Re-load our database
-        # with open("tmp.pkz", 'rb') as rfp:
-        #     print("reload")
-        #     tt = pickle.load(rfp)
-        tt = pd.read_csv("temp.csv")
-        print("after", len(tt.x),i)
-        # tt = tt.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        self.last = pd.read_csv("temp.csv")
 
 
 
+        intersect_series = self.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        # indx_list = intersect_series.index.intersection(self.last.index)
+        self.last = self.last.set_index(["filename", 'obj']).sort_index()
 
-
-        indx_list = intersect_series.index.intersection(tt.index)
-        print("indx_list ", len(indx_list),tt.index.levels[0])
-        intersect_series = intersect_series.loc[indx_list]
+        # print("indx_list ", len(indx_list))
+        # intersect_series = self.last.loc[intersect_series]
         print("got ", len(intersect_series))
-        return (last, intersect_series)
+        # return (self.df, intersect_series)
+        # print("last\n",self.last.head(5))
+        return(intersect_series,self.last)
+        #
+        # intersect_series = self.df.groupby(["filename", "obj"]).size().sort_values(ascending=False)
+        # indx_list = intersect_series.index.intersection(self.last.index)
+        # print("indx_list ", len(indx_list))
+        # intersect_series = intersect_series.loc[indx_list]
+        # print("got ", len(intersect_series))
+        # return (self.df, intersect_series)
 
 
 

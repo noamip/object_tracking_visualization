@@ -189,13 +189,13 @@ class Gui_View:
         plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
-
-    def plot_points(self,to_plot_x,to_plot_y):
-        plt.imshow(self.img)
-        plt.plot(to_plot_x, to_plot_y)
-        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
-        self.canvas.draw()
-        self.routes_root.destroy()
+    #
+    # def plot_points(self,to_plot_x,to_plot_y):
+    #     plt.imshow(self.img)
+    #     plt.plot(to_plot_x, to_plot_y)
+    #     plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
+    #     self.canvas.draw()
+    #     self.routes_root.destroy()
 
     def plot_heatmap(self, dataframe, df_obj):
         logger.debug(f"entering plot_heatmap with {len(df_obj)} routes")
@@ -285,8 +285,8 @@ class Gui_View:
     def set_image(self, image_name):  # sets image
         self.image_name = image_name
         self.img = plt.imread(image_name)
-
-    def plot_merge(self, dataframe, df_obj):
+    #
+    def plot_merge_select(self, dataframe, df_obj):
         logger.debug(f"entering plot_all_routes with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
         plt.imshow(im)
@@ -348,5 +348,14 @@ class Gui_View:
             oo2 = self.data.loc[self.last_plotted.index[r2]] #second route to merge
             return(oo1,oo2)
 
-
+    def plot_merge_result(self,df_obj,dataframe):
+        im = plt.imread(self.image_name)
+        plt.imshow(im)
+        # self.draw_grid()
+        for t in df_obj.index:
+            oo = dataframe.loc[t]
+            plt.plot(oo.x, oo.y)
+        plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
+        self.canvas.draw()
+        plt.gcf().clear()
 

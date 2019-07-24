@@ -40,7 +40,7 @@ class Controller:
     def merge(self):
         data = self.view.last_plotted
         if 0 < len(data) <= int(self.config['path_by_path_limit']):
-            self.view.plot_merge(self.filter_model.df, data)
+            self.view.plot_merge_select(self.filter_model.df, data)
             print("after plot")
             self.view.get_routes_for_merge()
 
@@ -53,9 +53,10 @@ class Controller:
         else:
             oo1,oo2=self.view.get_routes_selected()
             # plt1,plt2= self.filter_model.merge_routes(oo1,oo2)
-            res= self.filter_model.merge_routes(oo1,oo2)
-            self.view.plot_image_and_routes(res)
-            # self.view.plot_points(plt1,plt2)
+            indx_list,res=self.filter_model.merge_routes(oo1,oo2)
+            self.view.plot_merge_result(indx_list,res)
+            # self.view.plot_image_and_routes(res)
+           # self.view.plot_points(plt1,plt2)
 
 
 
@@ -103,52 +104,6 @@ class Controller:
             else:
                 self.view.plot_image_and_routes(res)# draw result on image
 
-
-
-        # intersect_series = self.filter_model.last.groupby(["filename", "obj"]).size().sort_values(ascending=False)
-        # if self.view.active_filters['hour'].get():
-        #     t1 = self.view.first_hour_filter.get()
-        #     t2 = self.view.second_hour_filter.get()
-        #     new_series = self.filter_model.filter_by_hours(str(t1), str(t2))
-        #     logger.debug(f"found {len(new_series)} routes by hour")
-        #
-        #     indx_list = intersect_series.index.intersection(new_series.index)
-        #     intersect_series = intersect_series.loc[indx_list]
-        #
-        # if self.view.active_filters['area'].get():
-        #     area = self.view.area_filter.get()
-        #     x1, y1, x2, y2 = area.split(',')
-        #     new_series = self.filter_model.filter_by_area(int(x1), int(x2), int(y1), int(y2))
-        #     logger.debug(f"found {len(new_series)} routes by area")
-        #     indx_list = intersect_series.index.intersection(new_series.index)
-        #     intersect_series = intersect_series.loc[indx_list]
-        #
-        # if self.view.active_filters['date'].get():
-        #     t1 = self.view.first_dhour_filter.get()
-        #     t2 = self.view.second_dhour_filter.get()
-        #     date = self.view.date_filter.get()
-        #     new_series = self.filter_model.filter_by_date_and_hour(date, t1, t2)
-        #     logger.debug(f"found {len(new_series)} routes by date")
-        #
-        #     indx_list = intersect_series.index.intersection(new_series.index)
-        #     intersect_series = intersect_series.loc[indx_list]
-        #
-        # if self.view.active_filters['block'].get():
-        #     # img = plt.imread(DEFUALT_IMAGE_FILE)
-        #     # logger.debug(f"-------{img.shape}")
-        #     areas = self.view.block_filter.get().split(',')
-        #     new_series = self.filter_model.filter_by_areas(areas)
-        #     logger.debug(new_series.head(3))
-        #     intersect_series = intersect_series[intersect_series.isin(new_series)]
-        #     indx_list = intersect_series.index.intersection(new_series.index)
-        #     intersect_series = intersect_series.loc[indx_list]
-        #
-        # if len(intersect_series) == 0:
-        #     self.view.draw_image(self.image)
-        #     self.view.status_update("no data applies")
-        #
-        # print("got ", len(intersect_series))
-        # return self.view.plot_image_and_routes((self.filter_model.df, intersect_series))
 
     def run(self):
         self.view.master.mainloop()

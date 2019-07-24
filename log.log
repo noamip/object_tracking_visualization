@@ -11883,3 +11883,1813 @@ DEBUG:matplotlib.axes._base:update_title_pos
 DEBUG:matplotlib.axes._base:update_title_pos
 DEBUG:matplotlib.axes._base:update_title_pos
 DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 0 routes
+DEBUG:settings:l=0,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 0 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 0 routes
+DEBUG:settings:l=0,lim=30,max_lim=2000
+DEBUG:settings:entering plot_one_by_one with 0 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 0 routes
+DEBUG:settings:l=0,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 0 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 3171 routes
+DEBUG:settings:l=3171,lim=30,max_lim=2000
+DEBUG:settings:entering plot_heatmap with 3171 routes
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x189C5B50>
+DEBUG:matplotlib.colorbar:Using auto colorbar locator on colorbar
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x189C5B50>
+DEBUG:matplotlib.colorbar:Setting pcolormesh
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 0 routes
+DEBUG:settings:l=0,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 0 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 3171 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 0 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_one_by_one with 11 routes
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 1 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 28 routes
+DEBUG:settings:l=28,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 28 routes
+DEBUG:settings:l=28,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 12 routes
+DEBUG:settings:l=12,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 1945 routes
+DEBUG:settings:l=1945,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 1945 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:got file from view None
+DEBUG:settings:NOOOOO got file from view None
+DEBUG:settings:got file from view data/oddetect.csv
+DEBUG:settings:entering load_data,file_name=data/oddetect.csv
+DEBUG:settings:file name only - oddetect
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:NOOOOO got image from view None
+DEBUG:settings:got image from view paths0.png
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\נעמי פינדרוס\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 11 routes
+DEBUG:settings:l=11,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 11 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 60 routes
+DEBUG:settings:l=60,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 60 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 12 routes
+DEBUG:settings:l=12,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 12 routes
+DEBUG:settings:l=12,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 12 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 8055 routes
+DEBUG:settings:l=8055,lim=30,max_lim=2000
+DEBUG:settings:entering plot_heatmap with 8055 routes
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x0DA88610>
+DEBUG:matplotlib.colorbar:Using auto colorbar locator on colorbar
+DEBUG:matplotlib.colorbar:locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0x0DA88610>
+DEBUG:matplotlib.colorbar:Setting pcolormesh
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 20 routes
+DEBUG:settings:l=20,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 20 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 679 routes
+DEBUG:settings:l=679,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 679 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 28 routes
+DEBUG:settings:l=28,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 28 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 5 routes
+DEBUG:settings:l=5,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 5 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 5 routes
+DEBUG:settings:l=5,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 5 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 5 routes
+DEBUG:settings:l=5,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 5 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 23 routes
+DEBUG:settings:l=23,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 23 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 23 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 6 routes
+DEBUG:settings:l=6,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 6 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 6 routes
+DEBUG:settings:l=6,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 6 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 6 routes
+DEBUG:settings:l=6,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 6 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 22 routes
+DEBUG:settings:l=22,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 22 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 22 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:plotting 7 routes
+DEBUG:settings:l=7,lim=30,max_lim=2000
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:settings:entering plot_all_routes with 7 routes
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.axes._base:update_title_pos
