@@ -19,21 +19,17 @@ class Gui_View:
         master = tk.Tk()
         self.master = master
         self.set_window_init()
-
-        # self.len_param = {'area': 4, 'hour': 2, 'date': 3}
-
         self.config = GENERAL_SETTINGS
         if os.path.exists("last.png"):
             os.remove("last.png")
-
-    event2canvas = lambda e, c: (c.canvasx(e.x), c.canvasy(e.y))
+    #
+    # event2canvas = lambda e, c: (c.canvasx(e.x), c.canvasy(e.y))
 
     def set_window_init(self):
         self.master.title("Parse Routes")
         self.draw_top_panel()
-        # self.place_holder()
         self.draw_filters()
-        # self.draw_bottom_panel()
+
 
     def draw_top_panel(self):  # draw image and file entries
         self.master_panel = tk.Frame(self.master, borderwidth=2, bg='white')
@@ -189,13 +185,6 @@ class Gui_View:
         plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
         self.canvas.draw()
         plt.gcf().clear()
-    #
-    # def plot_points(self,to_plot_x,to_plot_y):
-    #     plt.imshow(self.img)
-    #     plt.plot(to_plot_x, to_plot_y)
-    #     plt.savefig('last.png', transparent=True, bbox_inches='tight', pad_inches=-0.3)
-    #     self.canvas.draw()
-    #     self.routes_root.destroy()
 
     def plot_heatmap(self, dataframe, df_obj):
         logger.debug(f"entering plot_heatmap with {len(df_obj)} routes")
@@ -211,7 +200,7 @@ class Gui_View:
         self.canvas.draw()
         plt.gcf().clear()
 
-    def plot_one_by_one(self, dataframe, df_obj):
+    def plot_one_by_one(self, dataframe, df_obj):#plots the routes one after the other
         logger.debug(f"entering plot_one_by_one with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
         # self.draw_grid()
@@ -278,16 +267,16 @@ class Gui_View:
     def error_input(self, msg):
         self.status_message.configure(text=f"Curropted input. Task aborted:{msg}")
 
-    def status_update(self, msg):
+    def status_update(self, msg):#displays a message
         messagebox.showinfo("Parse Routes", f"{msg}")
         # self.status_message.configure(text=f"{msg}")
 
     def set_image(self, image_name):  # sets image
         self.image_name = image_name
         self.img = plt.imread(image_name)
-    #
-    def plot_merge_select(self, dataframe, df_obj):
-        logger.debug(f"entering plot_all_routes with {len(df_obj)} routes")
+
+    def plot_merge_select(self, dataframe, df_obj):#displays routes with numbers
+        logger.debug(f"entering merge_select with {len(df_obj)} routes")
         im = plt.imread(self.image_name)
         plt.imshow(im)
         i = 0
@@ -323,8 +312,7 @@ class Gui_View:
 
         return filters
 
-    def get_routes_for_merge(self):
-        # print('in get routes')
+    def get_routes_for_merge(self):#displays the list with routes numbers to choose from
         self.routes_root = tk.Tk()
 
         yScroll = tk.Scrollbar(self.routes_root, orient=tk.VERTICAL)
@@ -339,7 +327,7 @@ class Gui_View:
         self.routes_root.mainloop()
         # print('after get routes')
 
-    def get_routes_selected(self):
+    def get_routes_selected(self):#returns the routes chosen
         if len(self.routes.curselection()) != 2:
            return None
         else:
@@ -348,7 +336,7 @@ class Gui_View:
             oo2 = self.data.loc[self.last_plotted.index[r2]] #second route to merge
             return(oo1,oo2)
 
-    def plot_merge_result(self,df_obj,dataframe):
+    def plot_merge_result(self,df_obj,dataframe):#draws the merged routes
         im = plt.imread(self.image_name)
         plt.imshow(im)
         # self.draw_grid()

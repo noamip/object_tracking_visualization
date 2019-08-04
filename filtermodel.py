@@ -143,7 +143,7 @@ class FilterModel:
         print("got ", len(intersect_series))
         return (self.last, intersect_series)
 
-    def merge_routes(self, oo1, oo2):
+    def merge_routes(self, oo1, oo2):#creates and adds the new merged route to current dataframe
         last_x = oo1.x[-1]
         last_y = oo1.y[-1]
 
@@ -199,7 +199,7 @@ class FilterModel:
 
 
 
-def get_line(x1, y1, x2, y2):
+def get_line(x1, y1, x2, y2):#returns the points in the line that connects two points.
     points_x = pd.Series()
     points_y = pd.Series()
     issteep = abs(y2 - y1) > abs(x2 - x1)

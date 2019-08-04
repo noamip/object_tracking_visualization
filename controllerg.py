@@ -43,9 +43,8 @@ class Controller:
             self.view.plot_merge_select(self.filter_model.df, data)
             print("after plot")
             self.view.get_routes_for_merge()
-
         else:
-            self.view.status_update("not the right amount of routes for merging.")
+            self.view.status_update("There are to many routes for merging.")
 
     def merge_select(self):
         if len(self.view.get_routes_selected()) != 2:

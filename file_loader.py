@@ -104,7 +104,6 @@ class FileFixer:
 
         return df_by_obj
 
-
     def dump_to_pickle(self, df, pickle_name):
         logger.debug(f"entering dump_to_pickle")
         self.data = f"pickles_can/{pickle_name}.pkz"
